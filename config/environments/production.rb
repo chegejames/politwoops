@@ -64,7 +64,7 @@ Politwoops::Application.configure do
     :s3_permissions => :public_read,
     :path => "/:attachment/:filename",
     :url => ":s3_path_url",
-    :bucket => ENV['S3_BUCKET_NAME'],
+    :bucket => 'politwoops',
     :s3_credentials => {
       :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
