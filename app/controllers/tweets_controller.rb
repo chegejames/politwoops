@@ -3,7 +3,7 @@ class TweetsController < ApplicationController
   # GET /tweets
   # GET /tweets.xml
 
-  require 'RMagick'
+  require 'rmagick'
   include ApplicationHelper
 
   caches_action :index,
