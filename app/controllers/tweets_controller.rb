@@ -23,7 +23,7 @@ class TweetsController < ApplicationController
       @tweets = DeletedTweet.in_order
     end
 
-    @tweets = @tweets.where(:politician_id => @politicians)
+    @tweets = @tweets.where(politician_id: @politicians)
     tweet_count = 0 #@tweets.count
 
     if params.has_key?(:q) and params[:q].present?
@@ -36,7 +36,7 @@ class TweetsController < ApplicationController
     end
 
     # only approved tweets
-    @tweets = @tweets.where(:approved => true)
+    @tweets = @tweets.where(approved: true)
 
     @per_page_options = [20, 50]
     @per_page = closest_value((params.fetch :per_page, 0).to_i, @per_page_options)
