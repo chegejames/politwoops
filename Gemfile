@@ -39,6 +39,4 @@ group :development do
   gem 'awesome_print'
   gem 'pry'
   gem 'pry_debug'
-  gem 'unicorn'
-#  gem 'debugger'
 end
