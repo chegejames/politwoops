@@ -15,7 +15,7 @@ class TweetsController < ApplicationController
   before_filter :enable_filter_form
 
   def index
-    @filter_action = "/"
+    @filter_action = "/politwoops"
 
     if params.has_key?(:see) && params[:see] == :all
       @tweets = Tweet.in_order
