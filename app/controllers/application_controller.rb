@@ -5,6 +5,10 @@ class ApplicationController < ActionController::Base
   # let tweet helper methods be available in the controller
   helper TweetsHelper
 
+  if Rails.env.production?
+    before_action :cache
+  end
+
   before_filter :donor_banner
 
   rescue_from ActiveRecord::RecordNotFound, :with => :file_not_found
@@ -52,4 +56,11 @@ class ApplicationController < ActionController::Base
     end
   end
 
+
+
+  def cache
+    response.headers["Surrogate-Key"] = "politwoops"
+    # TODO: adjust this to something better in the actual controllers
+    expires_in(15.minutes, public: true, must_revalidate: true)
+  end
 end
