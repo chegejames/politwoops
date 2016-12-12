@@ -1,6 +1,7 @@
 # encoding: utf-8
 module TweetsHelper
   def default_avatar_url (pol)
+    return pol.avatar.url if pol.avatar.url
     if pol.female?
       "/politwoops/images/avatar_missing_female.png"
     else

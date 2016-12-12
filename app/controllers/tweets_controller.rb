@@ -6,11 +6,9 @@ class TweetsController < ApplicationController
   require 'rmagick'
   include ApplicationHelper
 
-  caches_action :index,
-    :expires_in => 30.minutes,
-    :if => proc { (params.keys - ['format', 'action', 'controller']).empty? }
+#  caches_action :index,    :expires_in => 30.minutes, :if => proc { (params.keys - ['format', 'action', 'controller']).empty? }
 
-  caches_action :thumbnail
+#  caches_action :thumbnail
 
   before_filter :enable_filter_form
 
@@ -23,7 +21,8 @@ class TweetsController < ApplicationController
       @tweets = DeletedTweet.in_order
     end
 
-    @tweets = @tweets.where(politician_id: @politicians)
+
+    @tweets = @tweets.where(politician_id: @politicians, approved: true)
     tweet_count = 0 #@tweets.count
 
     if params.has_key?(:q) and params[:q].present?
@@ -34,9 +33,6 @@ class TweetsController < ApplicationController
       @tweets = @tweets.where("content like ? or deleted_tweets.user_name like ? or politician_id in (?)", query, query, @search_pols)
 
     end
-
-    # only approved tweets
-    @tweets = @tweets.where(approved: true)
 
     @per_page_options = [20, 50]
     @per_page = closest_value((params.fetch :per_page, 0).to_i, @per_page_options)
@@ -50,7 +46,7 @@ class TweetsController < ApplicationController
         response.headers["Content-Type"] = "application/rss+xml; charset=utf-8"
         render
       end
-      format.json { render :json => {:meta => {:count => tweet_count}, :tweets => @tweets.map{|tweet| tweet.format } } }
+      format.json { render :json => {:meta => {:count => @tweets.size}, :tweets => @tweets.map{|tweet| tweet.format } } }
     end
   end
 

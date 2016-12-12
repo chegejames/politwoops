@@ -30,6 +30,7 @@ gem "aws-sdk"
 gem 'sass-rails'
 gem 'unicorn'
 gem 'dalli'
+gem 'skylight'
 
 gem "fog-aws", "~> 0.6"
 gem 'asset_sync', '~> 1.1'
