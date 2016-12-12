@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd $HOME/politwoops-tweet-collector
+cd /web/politwoops-tweet-collector
 export PYTHONPATH=$PYTHONPATH:`pwd`/lib
-$HOME/virt/bin/python ./bin/politwoops-worker.py --loglevel=notice --output=../log/politwoops-worker.log --images --restart
+python ./bin/politwoops-worker.py --loglevel=notice --images --restart
