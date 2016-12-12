@@ -11,6 +11,8 @@ Politwoops::Application.configure do
   # Log error messages when you accidentally call methods on nil.
   config.whiny_nils = true
 
+  config.log_level = :debug
+
   # Show full error reports and disable caching
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
@@ -25,10 +27,12 @@ Politwoops::Application.configure do
   config.action_dispatch.best_standards_support = :builtin
 
   config.paperclip_defaults = {
-    :storage => :filesystem,
-    :path => "/:attachment/:filename",
-    :interpolations => {
-      :base_path => "#{Rails.root}/public/images"
+    storage: :fog,
+    fog_host: "http://localhost:8080",
+    fog_credentials: { provider: "Local", local_root: "#{Rails.root}"},
+    path: "/:attachment/:filename",
+    interpolations: {
+      base_path: "assets"
     }
   }
 end
