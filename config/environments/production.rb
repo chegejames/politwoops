@@ -66,7 +66,7 @@ Politwoops::Application.configure do
     :storage => :s3,
     :s3_permissions => :public_read,
     :path => "/:attachment/:filename",
-    :url => ":s3_path_url",
+    :url => "https://s3.amazonaws.com/pp-projects-static/",
     :bucket => 'politwoops',
     :s3_credentials => {
       :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
