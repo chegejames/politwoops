@@ -37,6 +37,9 @@ Politwoops::Application.configure do
   # In production, Apache or nginx will already do this
   config.serve_static_files = false
 
+  config.action_controller.asset_host = "https://static.propublica.org"
+  config.assets.prefix = "/rails/assets/politwoops"
+
   # Enable serving of images, stylesheets, and javascripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
 
@@ -64,7 +67,7 @@ Politwoops::Application.configure do
     :s3_permissions => :public_read,
     :path => "/:attachment/:filename",
     :url => ":s3_path_url",
-    :bucket => ENV['S3_BUCKET_NAME'],
+    :bucket => 'politwoops',
     :s3_credentials => {
       :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']

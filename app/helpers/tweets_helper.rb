@@ -2,9 +2,9 @@
 module TweetsHelper
   def default_avatar_url (pol)
     if pol.female?
-      "/images/avatar_missing_female.png"
+      "/politwoops/images/avatar_missing_female.png"
     else
-      "/images/avatar_missing_male.png"
+      "/politwoops/images/avatar_missing_male.png"
     end
   end
 
@@ -23,7 +23,7 @@ module TweetsHelper
   def format_user_name(tweet_content)
     tweet_content.gsub(/(@(\w+))/, %Q{<a href="http://twitter.com/\\2" target="_blank">\\1</a>})
   end
-  
+
   def format_hashtag(tweet_content)
     tweet_content.gsub(/(#(\w+))/, %Q{<a href="https://twitter.com/#!/search?q=%23\\2" target="_blank">\\1</a>})
   end
@@ -31,7 +31,7 @@ module TweetsHelper
   def format_retweet_prefix (content, user_name)
     "RT @#{user_name}: #{content}"
   end
-  
+
   def format_tweet(tweet)
     if tweet.retweeted_id.nil?
       content = tweet.content
@@ -52,17 +52,17 @@ module TweetsHelper
     if (Time.now - tweet.modified).to_i > (60 * 60 * 24 * 365)
       tweet_time = tweet.modified.strftime("%l:%M %p")
       tweet_date = tweet.modified.strftime("%d %b %y") # 03 Jun 12
-      tweet_when = "at <a class=""linkUnderline"" href=""/tweet/#{tweet.id}"">#{tweet_time} on #{tweet_date}</a>"
+      tweet_when = "at <a class=""linkUnderline"" href=""/politwoops/tweet/#{tweet.id}"">#{tweet_time} on #{tweet_date}</a>"
     elsif (Time.now - tweet.modified).to_i > (60 * 60 * 24)
       tweet_time = tweet.modified.strftime("%l:%M %p")
       tweet_date = tweet.modified.strftime("%d %b") # 03 Jun
-      tweet_when = "at <a class=""linkUnderline"" href=""/tweet/#{tweet.id}"">#{tweet_time} on #{tweet_date}</a>"
+      tweet_when = "at <a class=""linkUnderline"" href=""/politwoops/tweet/#{tweet.id}"">#{tweet_time} on #{tweet_date}</a>"
     else
       since_tweet = time_ago_in_words tweet.modified
-      tweet_when = "<a class=""linkUnderline"" href=""/tweet/#{tweet.id}"">#{since_tweet}</a> ago"
+      tweet_when = "<a class=""linkUnderline"" href=""/politwoops/tweet/#{tweet.id}"">#{since_tweet}</a> ago"
     end
     delete_delay = (tweet.modified - tweet.created).to_i
-    
+
     delay = if delete_delay > (60 * 60 * 24 * 7)
       "after #{pluralize(delete_delay / (60 * 60 * 24 * 7), "week")}"
     elsif delete_delay > (60 * 60 * 24)
