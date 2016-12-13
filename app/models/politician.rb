@@ -91,6 +91,10 @@ class Politician < ActiveRecord::Base
     where(:gender => 'U')
   end
 
+  def twitter_url
+    "https://www.twitter.com/#{user_name}/"
+  end
+
   def full_name
     return [office && office.abbreviation, first_name, last_name, suffix].join(' ').strip
   end
@@ -109,10 +113,8 @@ class Politician < ActiveRecord::Base
     other_names.each do |other_name|
       if not other_name.empty? && other_name != self.user_name
         other_pol = Politician.find_by_user_name(other_name)
-        AccountLink.where(:politician_id => self.id,
-                          :link_id => other_pol.id).destroy_all
-        AccountLink.where(:link_id => self.id,
-                          :politician_id => other_pol.id).destroy_all
+        AccountLink.where(politician_id: self.id, link_id: other_pol.id).destroy_all
+        AccountLink.where(link_id: self.id, politician_id: other_pol.id).destroy_all
       end
     end
   end
@@ -122,11 +124,11 @@ class Politician < ActiveRecord::Base
 
     politician_ids = links.flat_map{ |l| [l.politician_id, l.link_id] }
                           .reject{ |pol_id| pol_id == self.id }
-    Politician.where(:id => politician_ids)
+    Politician.where(id: politician_ids)
   end
 
   def twoops
-    deleted_tweets.where(:approved => true)
+    deleted_tweets.where(approved: true)
   end
 
   def reset_avatar(options = {})
