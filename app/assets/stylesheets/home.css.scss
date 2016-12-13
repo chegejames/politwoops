@@ -1,0 +1,280 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#politwoops-app a, #politwoops-app a:hover {
+	color: #237EB5;
+}
+
+#content .disabled {
+	background-color:transparent !important;
+	color: black !important;
+	text-decoration:none;
+}
+
+#content h1 {
+	font-family: "Sentinel A", "Sentinel B", Georgia, serif;
+  font-size: 2.2em;
+	font-weight: bold;
+}
+
+#content h1.app-name {
+	font-size: 3.5em;
+  margin: 40px 0 0 0;
+  text-align: center;
+}
+
+#content h2.app-dek {
+	font-family: "Sentinel A", "Sentinel B", Georgia, serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2em;
+  text-align: center;
+  margin: 0px 0px 25px 0;
+}
+
+#content h3 {
+	font-family: "Sentinel A", "Sentinel B", Georgia, serif;
+	font-style: normal;
+	font-size: 2.0em;
+	font-weight: bold;
+	padding: 20px 0 10px 0;
+}
+
+p.byline {
+	margin: 0 0 30px 0;
+	font-family: 'Sentinel A', 'Sentinel B', Georgia, serif;
+	font-size: 15px;
+}
+
+#content .guff {
+  font-size: 1.3em;
+  line-height: 1.4em;
+}
+
+@media screen and (max-width: 480px) {
+  #politwoops-app{
+    .content{
+      h1{ font-size: 2.5em; }
+    }
+  }
+}
+
+/* tweets */
+
+.tweet { border-bottom: 1px solid #e2e0de; padding-bottom: 23px; margin-bottom: 23px;}
+
+.tweetTitle { font-weight: bold; font-size: 128%; margin-bottom: 5px;}
+h4.tweetTitle{
+	font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+.tweetTitle a:link, .tweetTitle a:active, .tweetTitle a:visited { text-decoration: none; color: #068797;}
+.tweetTitle a:hover { color: #063E5C; text-decoration: underline;}
+.tweetTitle span{
+	font-size: 72%;
+	font-color: #8D8883;
+}
+.tweet img {height: 73px; margin: 0 20px 0 0; width: 73px; border: 1px solid #bfc8c0; padding: 4px;}
+.contentLeft{
+	float: left;
+}
+.policount{
+	width: 83px;
+	font-size: 71.4%;
+	color: #8a8079;
+	line-height: 1.3em;
+	text-align: center;
+}
+.policount em{
+	font-weight: bold;
+	font-style: normal;
+}
+.policount .number{
+	font-size: 210%;
+	color: #e7d26e;
+	line-height: 1.2em;
+	font-weight: 500;
+}
+
+.tweetTitle a.linkUnderline:link, .tweetTitle a.linkUnderline:visited, a.linkUnderline:link, a.linkUnderline:visited  {
+	border-bottom: 1px dotted #5ca8b1;
+	font-weight: normal;
+	color: #8D8883;
+}
+.tweetTitle a.linkUnderline:active, a.linkUnderline:active, .tweetTitle a.linkUnderline:hover, a.linkUnderline:hover{
+	text-decoration: none;
+	color: #063E5C;
+}
+
+
+
+/** For Ali: CSS I added to deal with screenshots of links */
+.tweet .images h3 {margin-top: 30px; font-size: 120%;}
+.tweet .images img.screenshot {
+  float: left; max-width: 160px; max-height: 120px; width: auto; height: auto;
+  margin: 20px 0; margin-right: 20px; border: 1px solid #336699; padding: 3px;
+
+}
+
+/** End of section */
+
+.tweet .content { float: left; width: 480px; }
+.tweet-content { margin-bottom: 8px;}
+.tweet .inactiveMess{
+	margin-bottom: 8px;
+	color: #8D8883;
+	font-size: 90%;
+	font-style: italic;
+	margin-top: -3px;
+	background: #FDFCEE;
+	border-top: 1px dotted #E7D26E;
+	border-bottom: 1px dotted #E7D26E;
+	padding: 0 4px;
+}
+
+.tweet-content a {
+  display: inline-block;
+}
+
+
+.tweet .byline, .tweet .byline { color: #8d8883;}
+.tweet .byline {font-size: 90%;}
+
+.tweet .byline a.twitter {
+	display: block;
+	float: left;
+	width: 16px;
+  height: 16px;
+  margin: 4px 4px 0 0;
+  text-indent: -999999em;
+  background: url(bird_16_gray.png);
+}
+
+.tweet .actions { float: right; }
+.reply, .retweet { height: 47px; width: 59px;}
+.reply { background: url(btn_reply.png) center top no-repeat ; border-bottom: 1px dashed #DEC758;}
+.reply:hover { background: url(btn_reply.png) center bottom no-repeat ; }
+.retweet { background: url(btn_retweet.png) center top no-repeat;}
+.retweet:hover { background: url(btn_retweet.png) center bottom no-repeat; }
+
+.titleParty { text-transform: uppercase;}
+
+.textReplace {
+	text-indent: -9999em;
+	display: block;
+}
+
+.accountList {
+	display: block;
+}
+.accountList li{
+	display: block;
+	float: left;
+	width: auto;
+}
+.accountList .accountHandle{
+	padding: 4px 15px 3px 15px;
+	height: 36px;
+	display: table-cell;
+	vertical-align: middle;
+
+}
+.accountList .active .accountHandle {
+	background: rgb(248,242,214); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(248,242,214,1) 1%, rgba(254,253,248,1) 50%, rgba(253,252,238,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(248,242,214,1)), color-stop(50%,rgba(254,253,248,1)), color-stop(100%,rgba(253,252,238,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(248,242,214,1) 1%,rgba(254,253,248,1) 50%,rgba(253,252,238,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(248,242,214,1) 1%,rgba(254,253,248,1) 50%,rgba(253,252,238,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(248,242,214,1) 1%,rgba(254,253,248,1) 50%,rgba(253,252,238,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(248,242,214,1) 1%,rgba(254,253,248,1) 50%,rgba(253,252,238,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f2d6', endColorstr='#fdfcee',GradientType=0 ); /* IE6-9 */
+	border-top: 2px solid #dcd8b3;
+	border-right: 1px solid #dcd8b3;
+	border-left: 1px solid #dcd8b3;
+	display: table-cell;
+	padding: 3px 3px 0 3px;
+	height: 35px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	font-family: "museo-slab", georgia, serif;
+	font-size: 100%;
+	font-weight: 700;
+	color: #c9a706;
+
+}
+.accountList .active .accountHandle span{
+	border-top: 1px dotted #dec758;
+	border-right: 1px dotted #dec758;
+	border-left: 1px dotted #dec758;
+	line-height: 1.5em;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: table-cell;
+	vertical-align: middle;
+	height: 32px;
+}
+
+.aboutAccount{
+	background: #fdfcee;
+	border-bottom: 1px solid #dcd8b3;
+	border-top: 2px solid #dcd8b3;
+	padding: 3px;
+	z-index: -1;
+	width: 100%;
+	margin-top: 56px;
+	margin-bottom: 23px;
+}
+.aboutAccount p{
+	margin: 0;
+	padding: 15px;
+	border-top: 1px dotted #dec758;
+	border-bottom: 1px dotted #dec758;
+	color: #8a8079;
+}
+
+#pager {
+  font-size: 95%;
+  margin: 20px 0 50px 0;
+  text-align: center;
+}
+
+#pager a { margin-left: 5px;}
+.previous_page { margin-right: 10px;}
+.per_page_selected { }
+
+
+
+.tweet .actions .button {
+  text-indent: 0;
+  height: 48px;
+  width: 104px;
+  background: #0097EB;
+  color: white;
+  text-decoration: none;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.tweet .actions .button-small {
+  text-indent: 0;
+  height: 48px;
+  width: 48px;
+  margin: 0 0 0 4px;
+  background: #0097EB;
+  color: white;
+  text-decoration: none;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.numResults {
+	margin-top: 20px;
+}
+
+.numResults li{
+	display: inline;
+}
