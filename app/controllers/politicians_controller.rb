@@ -40,6 +40,10 @@ class PoliticiansController < ApplicationController
   end
 
   def search
+
+  end
+
+  def remove
     
   end
 
