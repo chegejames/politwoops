@@ -33,15 +33,20 @@ RUN ln -s /srv/var/casperjs/bin/casperjs /usr/local/bin/casperjs
 
 RUN apt-get install -y beanstalkd
 
-# Clean up APT when done.
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
 RUN git clone --depth 1 https://github.com/propublica/politwoops-tweet-collector.git && \
     mkdir -p /web/tmp/tweet-images && \
     easy_install pip && \
     pip install -r politwoops-tweet-collector/requirements.txt
 ADD config/tweets-client.ini /web/politwoops-tweet-collector/conf/tweets-client.ini
 
+RUN mkdir -p /web/data/heartbeats
+RUN ["chmod", "+x", "bin/run-collector-dockercmd"]
+RUN ["chmod", "+x", "/web/bin/run-tweets-client"]
+RUN ["chmod", "+x", "/web/bin/run-politwoops-worker"]
+RUN ["chmod", "+x", "/web/bin/run-screenshot-worker"]
+
+# Clean up APT when done.
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 VOLUME ["/data"]
 CMD bin/run-collector-dockercmd
