@@ -26,5 +26,3 @@ var CongressApi = (function($){
 
     return CongressApi;
 })(jQuery);
-
-

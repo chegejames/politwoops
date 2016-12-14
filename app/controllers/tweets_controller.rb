@@ -29,8 +29,7 @@ class TweetsController < ApplicationController
       # Rails prevents injection attacks by escaping things passed in with ?
       @query = params[:q]
       query = "%#{@query}%"
-      @search_pols = Politician.where("MATCH(user_name, first_name, middle_name, last_name) AGAINST (?)", query)
-      @tweets = @tweets.where("content like ? or deleted_tweets.user_name like ? or politician_id in (?)", query, query, @search_pols)
+      @tweets = @tweets.where("content like ? ", query)
 
     end
 

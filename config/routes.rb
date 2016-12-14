@@ -8,7 +8,7 @@ Politwoops::Application.routes.draw do
   get "user/:user_name" => "politicians#show", :as => :politician
   get "users/" => "politicians#all", :as => :all_politicians
   get "party/:name" => "parties#show", :as => :party
-  get "search" => "politicians#search", :as => :search
+  get "search" => "tweets#index", :as => :search
   get "remove" => "politicians#remove", :as => :remove
 
   namespace :admin do

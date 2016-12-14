@@ -11,3 +11,17 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require_tree .
+
+propublica.views.stateSelect = propublica.View.extend({
+
+  cssClass : "state-select",
+  tag: "select",
+
+  render : function() {
+  	$(".state-select").change(function () {
+      var val = this.value;
+      window.location = RAILS_ROOT + "?state=" + val;
+    });
+  }
+
+})

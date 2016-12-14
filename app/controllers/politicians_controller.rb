@@ -39,12 +39,8 @@ class PoliticiansController < ApplicationController
     end
   end
 
-  def search
-
-  end
-
   def remove
-    
+
   end
 
   before_filter :enable_filter_form

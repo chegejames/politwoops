@@ -1,0 +1,19 @@
+<div class="search-box">
+  <h3>Search Deleted Tweets</h3>
+    <%= form_tag index_path, :method => 'get', :id => "politician_search" do %>
+      <div>
+        <%= text_field_tag :q, params[:q], size: 50 %>
+        <%= submit_tag "Search", :name => nil, :class => "fancy-btn" %>
+        <div class="states">
+          <span class="state-guff">Or see politicians from a state: </span>
+            <select class="state-select">
+              <option value="" disabled selected>Pick a state</option>
+              <% @states.each do |state| %>
+                <%= "<option value='#{state}'>#{state}</option>".html_safe %>
+              <% end %>
+            </select>
+        </div>
+      </div>
+    <% end %>
+    <div class="examples">For example: <%= link_to "Trump", search_path(q: "trump") %>, <%= link_to "selfie", search_path(q: "selfie") %>, <%= link_to "Obamacare", search_path(q: "Obamacare") %></div>
+</div>
