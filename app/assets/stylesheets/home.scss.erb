@@ -147,15 +147,15 @@ h4.tweetTitle{
   height: 16px;
   margin: 4px 4px 0 0;
   text-indent: -999999em;
-  background: url(bird_16_gray.png);
+  background: url(<%= asset_path 'bird_16_gray.png' %>);
 }
 
 .tweet .actions { float: right; }
 .reply, .retweet { height: 47px; width: 59px;}
-.reply { background: url(btn_reply.png) center top no-repeat ; border-bottom: 1px dashed #DEC758;}
-.reply:hover { background: url(btn_reply.png) center bottom no-repeat ; }
-.retweet { background: url(btn_retweet.png) center top no-repeat;}
-.retweet:hover { background: url(btn_retweet.png) center bottom no-repeat; }
+.reply { background: url(<%= asset_path 'btn_reply.png' %>) center top no-repeat ; border-bottom: 1px dashed #DEC758;}
+.reply:hover { background: url(<%= asset_path 'btn_reply.png' %>) center bottom no-repeat ; }
+.retweet { background: url(<%= asset_path 'btn_retweet.png' %>) center top no-repeat;}
+.retweet:hover { background: url(<%= asset_path 'btn_retweet.png' %>) center bottom no-repeat; }
 
 .titleParty { text-transform: uppercase;}
 
