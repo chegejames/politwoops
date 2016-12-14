@@ -5,7 +5,7 @@
         <%= text_field_tag :q, params[:q], size: 50 %>
         <%= submit_tag "Search", :name => nil, :class => "fancy-btn" %>
         <div class="states">
-          <span class="state-guff">Or see politicians from a state: </span>
+          <span class="state-guff">See them from politicians in a state: </span>
             <select class="state-select">
               <option value="" disabled selected>Pick a state</option>
               <% @states.each do |state| %>
