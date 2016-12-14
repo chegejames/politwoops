@@ -1,0 +1,19 @@
+@media screen and (max-width:480px) {
+
+	html body {
+		background: none;
+		padding-top: 0px;
+	}
+
+	#content h1.app-name {
+	  margin: 20px 0 0 0;
+	}
+
+	.search-box input[type="text"] {
+	  width: 70%;
+	}
+
+	.search-box .fancy-btn {
+		width: 28%;
+	}
+}

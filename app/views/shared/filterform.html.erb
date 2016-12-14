@@ -1,10 +1,10 @@
 <div class="search-box">
-  <h3>Recent Politwoops</h3>
+  <h3>Politicians We Follow</h3>
   <form action="<%= @filter_action %>" method="GET" id="filter" class="form-inline">
 	    <ul>
 	    	<li class="styled-select">
 	    		<label for="state">State:</label>
-				<select name="state" id="state_filter">
+				<select name="state" id="state_filter" class="state-select">
 					<option value="">---------</option>
                     <% @states.each do |st| %>
                         <% if st != '' and st != ' ' and st %>
@@ -15,7 +15,7 @@
 			</li>
 			<li class="styled-select">
 	    		<label for="party">Party:</label>
-				<select name="party" id="party_select" class="styled-select">
+				<select name="party" id="party_select" class="state-select">
 					<option value="" >---------</option>
                     <% @parties.each do |par| %>
         				<option value="<%=par.name%>" <% if @filters['party'] == par.name %> selected <% end %>><%=par.display_name%></option>
@@ -24,7 +24,7 @@
 			</li>
 			<li class="styled-select">
 	    		<label for="office">Position:</label>
-				<select name="office" id="office_select" class="styled-select">
+				<select name="office" id="office_select" class="state-select">
 					<option value="">---------</option>
                     <% @offices.each do |off| %>
     					<option value="<%= off.id %>" <%if @filters['office'].to_f == off.id %> selected <% end %>>
@@ -33,7 +33,7 @@
                     <% end %>
 				</select>
 			</li>
-	    <button type="submit" class="btn">Filter</button>
+	    <button type="submit" class="filter-btn">Filter</button>
 		</ul>
 	</form>
 </div>

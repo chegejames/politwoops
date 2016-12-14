@@ -1,10 +1,10 @@
-	<h2>
-		Politicians We Follow
-	</h2>
+<h1 class="app-name">Politwoops</h1>
+<h2 class="app-dek">Deleted Tweets from Politicians</h2>
+<p class="byline">Originally published by <a href="http://sunlightfoundation.com/">The Sunlight Foundation</a>. Updated regularly.</p>
 
-    <%= render :template => "shared/filterform" %>
+<%= render :template => "shared/filterform" %>
 
-<div class="caveat"><p>This may be an incomplete list. If you think we're missing someone, please <a href="mailto:twoops@sunlightfoundation.com">email us</a> with their Name, State, Political Party, Office they hold or are seeking and, of course, Twitter handle. Thanks!</p>
+<div class="caveat"><p>This may be an incomplete list. If you think we're missing someone, please <a href="mailto:politwoops@propublica.org">email us</a> with their Name, State, Political Party, Office they hold or are seeking and, of course, Twitter handle. Thanks!</p>
 </div>
 
 	<table class="politicians">
@@ -40,12 +40,6 @@
 				</span>
 			</td>
 
-			<!-- 
-			<td>
-				<%= pol.user_name %>
-			</td>
-			-->
-
 			<td class="party">
 				<span>
 				<% if pol.party %> <%= pol.party.display_name %> <% end %>
@@ -59,5 +53,3 @@
 
 
         <%= render :template => "shared/pager" %>
-
-
