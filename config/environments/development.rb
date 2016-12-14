@@ -6,6 +6,11 @@ Politwoops::Application.configure do
   # since you don't have to restart the webserver when you make code changes.
   config.cache_classes = false
 
+  config.assets.debug = true
+  config.assets.compile = true
+  config.assets.digest = false
+
+
   config.eager_load = false
 
   # Log error messages when you accidentally call methods on nil.
