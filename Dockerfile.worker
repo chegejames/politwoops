@@ -40,6 +40,7 @@ RUN git clone --depth 1 https://github.com/propublica/politwoops-tweet-collector
 ADD config/tweets-client.ini /web/politwoops-tweet-collector/conf/tweets-client.ini
 
 RUN mkdir -p /web/data/heartbeats
+RUN mkdir -p /web/tmp/tweet-images
 RUN ["chmod", "+x", "bin/run-collector-dockercmd"]
 RUN ["chmod", "+x", "/web/bin/run-tweets-client"]
 RUN ["chmod", "+x", "/web/bin/run-politwoops-worker"]
