@@ -21,6 +21,10 @@ module TweetsHelper
     pol.party.nil? ? '' : pol.party.name.upcase
   end
 
+  def display_accounts(accounts)
+    accounts.map{|acc| link_to(acc.user_name, "http://twitter.com/#{acc.user_name}", target: "_blank") }.join(', ').html_safe
+  end
+
   def format_user_name(tweet_content)
     tweet_content.gsub(/(@(\w+))/, %Q{<a href="http://twitter.com/\\2" target="_blank">\\1</a>})
   end

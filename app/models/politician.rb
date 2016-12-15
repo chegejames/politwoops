@@ -95,6 +95,10 @@ class Politician < ActiveRecord::Base
     "https://www.twitter.com/#{user_name}/"
   end
 
+  def display_name
+    return [first_name, middle_name, last_name, suffix].join(' ').strip
+  end
+
   def full_name
     return [office && office.abbreviation, first_name, last_name, suffix].join(' ').strip
   end

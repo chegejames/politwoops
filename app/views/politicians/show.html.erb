@@ -9,26 +9,8 @@
 <p class="guff">Politwoops tracks deleted tweets by current politicians, including those in office and candidates. Explore the collection of tweets that they didn't want you to see. If you think we're missing someone, please <a href="mailto:politwoops@propublica.org">email us</a> with their Name, State, Political Party, Office they hold or are seeking and, of course, Twitter handle.</p>
 
 <div id="info">
-	<h3>Deleted Tweets from <%= office_abbr_for(@politician) %> <%= @politician.first_name %> <%=@politician.last_name %> (<%= party_name_for(@politician) %>)</h3>
-	<ul class="accountList">
-		<li id="all-label" class="active">
-			<a class="accountHandle" href="#"><span>All Tweets</span></a>
-		</li>
-        <% @accounts.each do |acc| %>
-		<li id="<%= acc.user_name %>-label">
-			<a class="accountHandle" href="#"><span>@<%= acc.user_name %></span></a>
-		</li>
-        <% end %>
-	</ul>
-    <div class="aboutAccount" id="all"><p></p></div>
-    <% @accounts.each do |acc| %>
-	<div class="aboutAccount" id="<%= acc.user_name %>" style="display:none;">
-		<p>
-			<% if @tweet_map[acc.user_name][0] %> <%= @tweet_map[acc.user_name][0].details['user']['description'] %> <% end %><a href="http://twitter.com/<%=acc.user_name%>">twitter page</a>
-		</p>
-	</div>
-    <% end %>
-    <div class="clear"></div>
+	<h3>Deleted Tweets from <%= office_abbr_for(@politician) %> <%= @politician.first_name %> <%=@politician.last_name %> (<%= party_name_for(@politician) %>-<%= @politician.state %>)</h3>
+  <p class="about"><%= @politician.display_name %>'s accounts: <%= display_accounts(@accounts) %></p>
 </div>
 <div id="all-container" class="tweet-content-container">
     <%= render :partial => "tweets/tweet", :collection => @tweet_map['all'], :object => :tweet %>

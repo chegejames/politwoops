@@ -21,12 +21,7 @@
 			</td>
 			<td class="name">
 				<span>
-				<a href="/user/<%= pol.user_name %>/">
-					<%= pol.first_name %>
-					<%= pol.middle_name %>
-					<%= pol.last_name %>
-					<%= pol.suffix %>
-				</a>
+					<%= link_to pol.display_name, politician_path(pol.user_name) %>
 				</span>
 			</td>
 			<td class="state">
