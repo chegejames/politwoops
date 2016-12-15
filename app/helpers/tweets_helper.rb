@@ -1,5 +1,6 @@
 # encoding: utf-8
 module TweetsHelper
+
   def default_avatar_url (pol)
     return pol.avatar.url if pol.avatar.url
     if pol.female?
@@ -14,6 +15,7 @@ module TweetsHelper
   end
 
   def office_abbr_for (pol)
+    return nil if pol.office.title.include?('President')
     pol.office.nil? ? '' : pol.office.abbreviation
   end
 
@@ -106,6 +108,12 @@ module TweetsHelper
 
   def rss_date(time)
     time.strftime "%a, %d %b %Y %H:%M:%S %z"
+  end
+
+  def svg(name)
+    file_path = "#{Rails.root}/app/assets/images/#{name}.svg"
+    return File.read(file_path).html_safe if File.exists?(file_path)
+    '(not found)'
   end
 
 end

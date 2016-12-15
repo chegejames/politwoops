@@ -8,6 +8,70 @@ class Politician < ActiveRecord::Base
   NotCollectingOrShowing = 3
   NotCollectingButShowing = 4
 
+  STATES =
+    {
+      "AK": "Alaska",
+      "AL": "Ala.",
+      "AR": "Ark.",
+      "AS": "American Samoa",
+      "AZ": "Ariz.",
+      "CA": "Calif.",
+      "CO": "Colo.",
+      "CT": "Conn.",
+      "DC": "D.C.",
+      "DE": "Del.",
+      "FL": "Fla.",
+      "GA": "Ga.",
+      "GU": "Guam",
+      "HI": "Hawaii",
+      "IA": "Iowa",
+      "ID": "Idaho",
+      "IL": "Ill.",
+      "IN": "Ind.",
+      "KS": "Kan.",
+      "KY": "Ky.",
+      "LA": "La.",
+      "MA": "Mass.",
+      "MD": "Md.",
+      "ME": "Maine",
+      "MI": "Mich.",
+      "MN": "Minn.",
+      "MO": "Mo.",
+      "MP": "Northern Marina Islands",
+      "MS": "Miss.",
+      "MT": "Mont.",
+      "NC": "N.C.",
+      "ND": "N.D.",
+      "NE": "Neb.",
+      "NH": "N.H.",
+      "NJ": "N.J.",
+      "NM": "N.M.",
+      "NV": "Nev.",
+      "NY": "N.Y.",
+      "OH": "Ohio",
+      "OK": "Okla.",
+      "OR": "Ore.",
+      "PA": "Pa.",
+      "PR": "Puerto Rico",
+      "RI": "R.I.",
+      "SC": "S.C.",
+      "SD": "S.D.",
+      "TN": "Tenn.",
+      "TX": "Texas",
+      "UT": "Utah",
+      "VA": "Va.",
+      "VI": "Virgin Islands",
+      "VT": "Vt.",
+      "WA": "Wash.",
+      "WI": "Wis.",
+      "WV": "W.Va.",
+      "WY": "Wyo."
+    }
+
+  def display_state
+    STATES[state.to_sym]
+  end
+
   has_attached_file :avatar, { :path => ':base_path/avatars/:filename',
                                :url => "/images/avatars/:filename",
                                :default_url => '' }

@@ -67,7 +67,7 @@ module ApplicationHelper
     when 3600 .. (3600*24-1)
       hours = (diff_seconds/3600).round
       "#{hours} hours ago"
-    when (3600*24) .. (3600*24*30) 
+    when (3600*24) .. (3600*24*30)
       days = (diff_seconds/(3600*24)).round
       "#{days} days ago"
     else
@@ -76,4 +76,3 @@ module ApplicationHelper
   end
 
 end
-

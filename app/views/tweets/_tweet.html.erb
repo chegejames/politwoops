@@ -8,27 +8,20 @@
   <% end %>
 
 	<div class="contentLeft">
-		<a href="/politwoops/user/<%= tweet.politician.user_name %>">
-      <img src="<%= default_avatar_url(tweet.politician) %>"
-           class="politician-avatar"
-           data-lateimg-src="<%= tweet.politician.avatar.url %>"
-           alt="<%= tweet.politician.user_name %>"
-           width="73"
-           height="73">
-		</a>
+    <%= link_to (image_tag(default_avatar_url(tweet.politician), class: "politician-avatar")), politician_path(tweet.politician.user_name) %>
 	</div>
 
   <div class="content">
     <div class="tweet-content">
       <h4 class="tweetTitle">
-        <%= link_to "#{tweet.details['user']['name']} ( #{tweet.politician.party.name.upcase})", politician_path(tweet.politician.user_name) %>
-  	    <span><a class="accountHandle linkUnderline" href="/politwoops/user/<%= tweet.politician.user_name %>">@<%= tweet.politician.user_name %></a></span>
+        <%= link_to "#{tweet.details['user']['name']} (#{tweet.politician.party.name.upcase})", politician_path(tweet.politician.user_name) %>
+  	    <span><%= link_to "@#{tweet.politician.user_name}", politician_path(tweet.politician.user_name), class: "accountHandle linkUnderline" %></span>
 	    </h4>
 	    <% if tweet.politician.status ==  4 %>
             <div class="inactiveMess">Politwoops no longer follows this account.</div>
         <% end %>
 
-      <%= format_tweet(tweet).to_s.html_safe %>
+      <p class="tweet-text"><%= format_tweet(tweet).to_s.html_safe %></p>
     </div>
 
     <div class="byline">
@@ -55,8 +48,9 @@
 
   <% if !(defined?(admin) and admin) %>
     <div class="actions">
-      <a href="http://twitter.com/share?text=<%= CGI.escape('@' + tweet.user_name + ' ') %>&url=https://projects.propublica.org/politwoops/tweet/<%= tweet.id %>&via=SunFoundation" class="reply textReplace" target="_blank"><%=t :reply, :scope => [:politwoops, :tweets] %></a>
-      <a href="http://twitter.com/share?text=<%= CGI.escape('DT @' + tweet.user_name + ' ' + CGI.unescapeHTML(tweet.content)) %>&url=https://projects.propublica.org/politwoops/tweet/<%= tweet.id %>" class="retweet textReplace" target="_blank"><%=t :retweet, :scope => [:politwoops, :tweets] %></a>
+      <div class="reply textReplace">
+        <%= link_to(svg('link-icon'), tweet.twoops_url) %>
+      </div>
     </div>
   <% end %>
 

@@ -5,7 +5,7 @@
         <%= text_field_tag :q, params[:q], size: 50 %>
         <%= submit_tag "Search", :name => nil, :class => "fancy-btn" %>
         <div class="states">
-          <span class="state-guff">See them from politicians in a state: </span>
+          <span class="state-guff">See them by state: </span>
             <select class="state-select">
               <option value="" disabled selected>Pick a state</option>
               <% @states.each do |state| %>
@@ -16,4 +16,5 @@
       </div>
     <% end %>
     <div class="examples">For example: <%= link_to "Trump", search_path(q: "trump") %>, <%= link_to "selfie", search_path(q: "selfie") %>, <%= link_to "Obamacare", search_path(q: "Obamacare") %></div>
+    <div class="users"><%= link_to "See all politicians", all_politicians_path %></div>
 </div>

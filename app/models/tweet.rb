@@ -57,6 +57,10 @@ class Tweet < ActiveRecord::Base
     end
   end
 
+  def twoops_url
+    "tweet/#{id}"
+  end
+
   def twitter_url
     "https://www.twitter.com/#{user_name}/status/#{id}"
   end

@@ -30,8 +30,9 @@ class TweetsController < ApplicationController
       @query = params[:q]
       query = "%#{@query}%"
       @tweets = @tweets.where("content like ? ", query)
-
     end
+
+    @state = params[:state]
 
     @per_page_options = [20, 50]
     @per_page = closest_value((params.fetch :per_page, 0).to_i, @per_page_options)

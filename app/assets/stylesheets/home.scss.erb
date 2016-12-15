@@ -53,7 +53,27 @@ p.byline {
 }
 
 #content .about {
+	font-size: 16px;
+	font-weight: bold;
 	margin-top: -5px;
+}
+
+#content .crumbs {
+  padding: 10px 0 10px;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Sentinel A", "Sentinel B", Georgia, serif;
+  display: inline-block;
+}
+
+#content .crumbs > div {
+  float: left;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+#content .crumbs > div a {
+  display: inline-block;
 }
 
 ul {
@@ -78,7 +98,11 @@ ul {
 
 /* tweets */
 
-.tweet { border-bottom: 1px solid #e2e0de; padding-bottom: 23px; margin-bottom: 23px;}
+.tweet { border-bottom: 1px solid #e2e0de; padding-bottom: 23px; margin-bottom: 23px; padding-left: 50px;}
+
+.tweet-text {
+	font-size: 16px;
+}
 
 .tweetTitle { font-weight: bold; font-size: 128%; margin-bottom: 5px;}
 h4.tweetTitle{
@@ -166,17 +190,17 @@ h4.tweetTitle{
   background: url(<%= asset_path 'bird_16_gray.png' %>);
 }
 
-.tweet .actions { float: right; }
-.reply, .retweet { height: 47px; width: 59px;}
-.reply { background: url(<%= asset_path 'btn_reply.png' %>) center top no-repeat ; border-bottom: 1px dashed #DEC758;}
-.reply:hover { background: url(<%= asset_path 'btn_reply.png' %>) center bottom no-repeat ; }
-.retweet { background: url(<%= asset_path 'btn_retweet.png' %>) center top no-repeat;}
-.retweet:hover { background: url(<%= asset_path 'btn_retweet.png' %>) center bottom no-repeat; }
+.tweet .actions { float: left; }
+.reply { padding-left: 20px; height: 47px; width: 59px; padding-top: 45px;}
+///.reply { background: url(<%= asset_path 'link-icon.svg' %>) center top no-repeat;}
+///.reply:hover { background: url(<%= asset_path 'link-icon.svg' %>) center bottom no-repeat ; }
+///.retweet { background: url(<%= asset_path 'btn_retweet.png' %>) center top no-repeat;}
+///.retweet:hover { background: url(<%= asset_path 'btn_retweet.png' %>) center bottom no-repeat; }
 
 .titleParty { text-transform: uppercase;}
 
 .textReplace {
-	text-indent: -9999em;
+///	text-indent: -9999em;
 	display: block;
 }
 
