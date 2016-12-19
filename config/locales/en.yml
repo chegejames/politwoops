@@ -3,7 +3,7 @@
 
 en:
   politwoops:
-    slogan: "Deleted tweets from politicians" 
+    slogan: "Deleted tweets from politicians"
     login: "login"
     logout: "logout"
     menu: "menu"
@@ -50,7 +50,7 @@ en:
       search_label: "Search for twitter user"
       success_update: "The politician was successfully added to the group"
       no_users_found: "Sorry, we did not find anything. Try again."
-      
+
     pages:
       errors_explanation:
         one: "1 error prohibited saving this page:"
@@ -134,10 +134,10 @@ en:
       require_no_user: "You must be logged out to view this page"
       success_create: "The user was successfully created"
       success_update: "The user was successfully updated"
-    
+
     twitter:
       retweet_notice: "Look! @%{politician} deleted a tweet! %{tweet_url}"
-  
+
   #activerecord:
   #errors:
   #  template:

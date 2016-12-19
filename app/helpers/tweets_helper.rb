@@ -41,9 +41,9 @@ module TweetsHelper
 
   def format_tweet(tweet)
     if tweet.retweeted_id.nil?
-      content = tweet.content
+      content = tweet.content.strip
     else
-      content = format_retweet_prefix(tweet.retweeted_content,
+      content = format_retweet_prefix(tweet.retweeted_content.strip,
                                       tweet.retweeted_user_name)
     end
     content = format_hashtag(content)
@@ -93,8 +93,7 @@ module TweetsHelper
 
     if html
       source = tweet.details["source"].to_s.html_safe
-      byline = "<a href=\"http://twitter.com/#{tweet.politician.user_name}\" class=\"twitter\">#{tweet.details['user']['name']}</a>".html_safe
-      byline += t(:byline,
+      byline = t(:byline,
                   :scope => [:politwoops, :tweets],
                   :retweet => rt_text,
                   :when => tweet_when,

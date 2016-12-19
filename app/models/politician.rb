@@ -155,7 +155,7 @@ class Politician < ActiveRecord::Base
     where(:gender => 'U')
   end
 
-  def twitter_url
+  def twitter_user_url
     "https://www.twitter.com/#{user_name}/"
   end
 

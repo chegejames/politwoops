@@ -186,7 +186,7 @@ nl:
         format: "%{attribute} %{message}"
 
   politwoops:
-    slogan: "Alle verwijderde tweets van politici" 
+    slogan: "Alle verwijderde tweets van politici"
     login: "inloggen"
     logout: "uitloggen"
     menu: "menu"
@@ -228,7 +228,7 @@ nl:
 
     countries:
       index_heading: "Internationale versies"
-      
+
     groups_politicians:
       search_label: "Zoek naar twitter gebruiker"
       success_update: "De politicus was succesvol toegevoegd aan de groep"
@@ -283,7 +283,7 @@ nl:
       politicians: "Aantal politici"
       today: "vandaag"
       index_heading: "Statistieken"
-    
+
     tweets:
       byline: "%{when} geleden verwijderd via %{what}"
       reply: "reply"
@@ -316,7 +316,7 @@ nl:
       require_no_user: "Je moet uitgelogd zijn om deze pagina te kunnen bekijken"
       success_create: "De gebruiker is succesvol aangemaakt"
       success_update: "De gebruiker is succesvol opgeslagen"
-    
+
     twitter:
       retweet_notice: "Kijk! @%{politician} verwijderde een tweet! %{tweet_url}"
 
@@ -327,7 +327,7 @@ nl:
         one: "1 fout zorgde er voor dat de %{model} niet opgeslagen kon worden"
         other: "%{count} fouten zorgden er voor dat de %{model} niet opgeslagen kon worden"
       body: "Er waren problemen met de volgende velden:"
-          
+
   authlogic:
     error_messages:
       login_blank: mag niet leeg zijn
