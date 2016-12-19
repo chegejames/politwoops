@@ -124,3 +124,22 @@
 	display: inline-block;
 	position: relative;
 }
+
+@media all and (max-width: 640px) {
+	.examples {
+		display: none;
+	}
+
+	.users {
+		padding-top: 10px;
+		float: left !important;
+		display: inline-block !important;
+	}
+
+	.states {
+		padding-top: 5px;
+		float: left !important;
+		display: inline-block !important;
+	}
+
+}

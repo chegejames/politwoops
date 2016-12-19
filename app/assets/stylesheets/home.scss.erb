@@ -88,12 +88,50 @@ ul {
 	}
 }
 
-@media screen and (max-width: 480px) {
-  #politwoops-app{
-    .content{
-      h1{ font-size: 2.5em; }
-    }
+@media all and (max-width: 640px) {
+	.tweet {
+		padding: 0px !important;
+	}
+	.tweet .content {
+		width: 300px !important;
+	}
+  .tweet img {
+    display: none;
   }
+	.tweet .byline a.twitter {
+		display: none !important;
+	}
+
+	.reply {
+		padding: 0px !important;
+		height: 30px !important;
+	}
+	.textReplace {
+		float: right;
+	}
+	table.politicians{
+		overflow: hidden;
+	}
+	table.politicians td.name span{
+		width: 50%;
+	}
+	table.politicians td.state span{
+		width: 50%;
+	}
+	table.politicians td.office span{
+		display: none
+	}
+	table.politicians td.party span{
+		display: none;
+	}
+
+	#content h3 {
+		font-family: "Sentinel A", "Sentinel B", Georgia, serif;
+		font-style: normal;
+		font-size: 1.8em;
+		font-weight: bold;
+		padding: 20px 0 10px 0;
+	}
 }
 
 /* tweets */
@@ -192,15 +230,10 @@ h4.tweetTitle{
 
 .tweet .actions { float: left; }
 .reply { padding-left: 20px; height: 47px; width: 59px; padding-top: 45px;}
-///.reply { background: url(<%= asset_path 'link-icon.svg' %>) center top no-repeat;}
-///.reply:hover { background: url(<%= asset_path 'link-icon.svg' %>) center bottom no-repeat ; }
-///.retweet { background: url(<%= asset_path 'btn_retweet.png' %>) center top no-repeat;}
-///.retweet:hover { background: url(<%= asset_path 'btn_retweet.png' %>) center bottom no-repeat; }
 
 .titleParty { text-transform: uppercase;}
 
 .textReplace {
-///	text-indent: -9999em;
 	display: block;
 }
 
