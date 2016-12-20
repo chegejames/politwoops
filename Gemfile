@@ -18,12 +18,11 @@ gem 'twitter-text' # parsing hashtags and usernames
 gem "comma", "~> 3.0"
 gem "gender_detector"
 
-gem "will_paginate", "~> 3.0.pre2" # pagination
+gem "will_paginate", '~> 3.1.0' # pagination
 gem "rails_autolink" # auto_link function
 
 #gem "system_timer", "~> 1.2.4"
 gem "beanstalk-client"
-
 gem "rmagick", "~> 2.0"
 gem "paperclip", "2.7.0"
 gem "aws-sdk"
