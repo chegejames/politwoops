@@ -7,9 +7,7 @@
   <div>Deleted Tweets from <%= @politician.display_name %>, <%= party_name_for(@politician) %><% if @politician.display_state %>-<%= @politician.display_state %><% end %></div>
 </div>
 
-<h1 class="app-name">Politwoops</h1>
-<h2 class="app-dek">Deleted Tweets from <%= @politician.display_name %>, <%= party_name_for(@politician) %><% if @politician.display_state %>-<%= @politician.display_state %><% end %></h2>
-<p class="byline">Originally published by <a href="http://sunlightfoundation.com/">The Sunlight Foundation</a>. Updated regularly.</p>
+<h1 class="app-name">Deleted Tweets from <%= @politician.display_name %>, <%= party_name_for(@politician) %><% if @politician.display_state %>-<%= @politician.display_state %><% end %></h1>
 
 <div id="info">
   <p class="about"><%= @politician.display_name %>'s accounts: <%= display_accounts(@accounts) %></p>

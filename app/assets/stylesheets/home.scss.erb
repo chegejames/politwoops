@@ -89,6 +89,7 @@ ul {
 }
 
 @media all and (max-width: 640px) {
+
 	.tweet {
 		padding: 0px !important;
 	}
@@ -99,7 +100,7 @@ ul {
     display: none;
   }
 	.tweet .byline a.twitter {
-		display: none !important;
+		float: left;
 	}
 
 	.reply {
@@ -125,12 +126,28 @@ ul {
 		display: none;
 	}
 
+	#content .crumbs {
+		display: none;
+	}
+
+	#content h1.app-name{
+		padding-bottom: 10px;
+	}
+
+	#content h2.app-dek {
+		display: none;
+	}
+
 	#content h3 {
 		font-family: "Sentinel A", "Sentinel B", Georgia, serif;
 		font-style: normal;
 		font-size: 1.8em;
 		font-weight: bold;
 		padding: 20px 0 10px 0;
+	}
+
+	#content h3.follow {
+		display: none;
 	}
 }
 
