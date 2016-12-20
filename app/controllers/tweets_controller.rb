@@ -13,17 +13,11 @@ class TweetsController < ApplicationController
   before_filter :enable_filter_form
 
   def index
-    @filter_action = "/politwoops"
 
-    if params.has_key?(:see) && params[:see] == :all
-      @tweets = Tweet.in_order
-    else
-      @tweets = DeletedTweet.in_order
-    end
-
-
-    @tweets = @tweets.where(politician_id: @politicians, approved: true)
-    tweet_count = 0 #@tweets.count
+    @per_page_options = [20, 50]
+    @per_page = closest_value((params.fetch :per_page, 0).to_i, @per_page_options)
+    @page = [params[:page].to_i, 1].max
+    @tweets = DeletedTweet.includes(:tweet_images, politician: :party).where(politician_id: @politicians, approved: true).order('created DESC').paginate(page: params[:page], per_page: @per_page, total_entries: @deleted_count)
 
     if params.has_key?(:q) and params[:q].present?
       # Rails prevents injection attacks by escaping things passed in with ?
@@ -34,19 +28,13 @@ class TweetsController < ApplicationController
 
     @state = params[:state]
 
-    @per_page_options = [20, 50]
-    @per_page = closest_value((params.fetch :per_page, 0).to_i, @per_page_options)
-    @page = [params[:page].to_i, 1].max
-
-    @tweets = @tweets.includes(:tweet_images, :politician => [:party]).paginate(:page => params[:page], :per_page => @per_page)
-
     respond_to do |format|
       format.html # index.html.erb
       format.rss  do
         response.headers["Content-Type"] = "application/rss+xml; charset=utf-8"
         render
       end
-      format.json { render :json => {:meta => {:count => @tweets.size}, :tweets => @tweets.map{|tweet| tweet.format } } }
+      format.json { render :json => {:meta => {:count => nil}, :tweets => @tweets.map{|tweet| tweet.format } } }
     end
   end
 

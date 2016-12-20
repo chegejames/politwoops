@@ -9,9 +9,6 @@ class Tweet < ActiveRecord::Base
 
   before_save :extract_retweet_fields
 
-  cattr_reader :per_page
-  @@per_page = 10
-
   def self.in_order
     includes(:politician).order('modified DESC')
   end

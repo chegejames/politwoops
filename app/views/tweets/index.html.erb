@@ -32,7 +32,7 @@
   <% end %>
 <% end %>
 
-<% if @tweets.nil? %>
+<% if @tweets.length == 0 %>
   No results for the filter options you selected.
 <% else %>
   <%= render :partial => "tweets/tweet", :collection => @tweets, :object => :tweet %>

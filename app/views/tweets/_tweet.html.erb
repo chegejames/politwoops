@@ -1,11 +1,6 @@
 <div id="tweet-<%= tweet.id %>" class="tweet">
   <a name="<%= tweet.id %>"></a>
 
-  <% if flash[tweet.id] %>
-    <div class="admin_error error">
-      <%= flash[tweet.id] %>
-    </div>
-  <% end %>
 
 	<div class="contentLeft">
     <%= link_to (image_tag(default_avatar_url(tweet.politician), class: "politician-avatar")), politician_path(tweet.politician.user_name) %>
@@ -39,53 +34,5 @@
   <% end %>
 
   <div class="clear"></div>
-
-  <% if defined?(admin) and admin %>
-    <div class="admin review" data-id="<%= tweet.id %>">
-      <%= form_tag admin_review_tweet_path(tweet) do %>
-        <%= hidden_field_tag "return_to", "#{request.url}##{tweet.id}" %>
-
-        <% if tweet.reviewed? %>
-          <div class="review_controls">
-            <% if tweet.approved? %>
-              <%= submit_tag "Unapprove" %>
-            <% else %>
-              <%= submit_tag "Approve" %>
-            <% end %>
-
-            <% if tweet.reviewed_at %>
-              <span class="reviewed_at">
-                Reviewed on <%= tweet.reviewed_at.strftime "%B %d, %Y at %I:%M %p" %>:
-              </span>
-            <% end %>
-
-            <div class="review_message">
-              <% if tweet.review_message.present? %>
-                <%= light_format tweet.review_message %>
-              <% else %>
-                (No message entered.)
-              <% end %>
-            </div>
-            <a class="edit" href="#">Edit message</a>
-          </div>
-
-          <div class="edit_controls" style="display: none">
-            <textarea name="review_message" class="review_message edit"><%= tweet.review_message %></textarea>
-            <%= submit_tag "Update" %>
-            <a class="cancel" href="#">Cancel</a>
-          </div>
-
-        <% else %>
-          <%= submit_tag "Unapprove" %>
-          <%= submit_tag "Approve" %>
-          <br/>
-          <label class="review_message">
-            A note about why (required if approving)
-          </label>
-          <textarea name="review_message" class="review_message"></textarea>
-        <% end %>
-      <% end %>
-    </div>
-  <% end %>
 
 </div>

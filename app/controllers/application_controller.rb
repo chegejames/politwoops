@@ -9,18 +9,12 @@ class ApplicationController < ActionController::Base
     before_action :cache
   end
 
-  before_filter :donor_banner
-
   rescue_from ActiveRecord::RecordNotFound, :with => :file_not_found
 
   def file_not_found
     respond_to do |format|
       format.html { render :file => "public/404.html", :status => 404}
     end
-  end
-
-  def donor_banner
-    @donor_banner_enabled = Settings.fetch(:enable_donor_banner, false)
   end
 
   # needs to become more dynamic somehow
@@ -39,19 +33,21 @@ class ApplicationController < ActionController::Base
 
     @politicians = Politician.active
 
+    @deleted_count = DeletedTweet.count_by_sql "SELECT COUNT(*) FROM `deleted_tweets` WHERE `deleted_tweets`.`approved` = 1 AND `deleted_tweets`.`politician_id` IN (SELECT `politicians`.`id` FROM `politicians` WHERE `politicians`.`status` IN (1, 4))"
+
     #check for filters
     @filters = {'state' => nil, 'party' => nil, 'office' => nil  }
     unless params.fetch('state', '').empty?
-        @politicians = @politicians.where(:state => params[:state])
+        @politicians = @politicians.where(state: params[:state])
         @filters['state'] = params[:state]
     end
     unless params.fetch('party', '').empty?
-        party = Party.where(:name => params[:party])[0]
-        @politicians = @politicians.where(:party_id => party)
+        party = Party.where(name: params[:party])[0]
+        @politicians = @politicians.where(party_id: party)
         @filters['party'] = party.name
     end
     unless params.fetch('office', '').empty?
-        @politicians = @politicians.where(:office_id => params[:office])
+        @politicians = @politicians.where(office_id: params[:office])
         @filters['office'] = params[:office]
     end
   end
