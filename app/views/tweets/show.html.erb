@@ -2,6 +2,11 @@
     Deleted Tweet from <%= @tweet.details['user']['name'] %>
 <% end %>
 
-<h1 class="app-name">Deleted Tweet from <%= @tweet.details['user']['name'] %></h1>
+<div class="crumbs">
+  <div><%= link_to "Politwoops", root_path %> »</div>
+  <div>Deleted Tweet from <%= @tweet.politician.display_name %>, <%= party_name_for(@tweet.politician) %><% if @tweet.politician.display_state %>-<%= @tweet.politician.display_state %><% end %></div>
+</div>
+
+<h1 class="tweet-detail">Deleted Tweet from <%= @tweet.details['user']['name'] %></h1>
 
 <%= render :partial => "tweets/tweet", :locals => {:tweet => @tweet} %>

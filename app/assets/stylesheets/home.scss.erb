@@ -24,6 +24,12 @@
   text-align: center;
 }
 
+#content h1.tweet-detail {
+	font-size: 2.0em;
+  margin: 10px 0 20px 0;
+  text-align: center;
+}
+
 #content h2.app-dek {
 	font-family: "Sentinel A", "Sentinel B", Georgia, serif;
   font-weight: 500;
@@ -61,8 +67,15 @@ p.byline {
 	margin-top: -5px;
 }
 
+#content .accounts {
+	font-size: 16px;
+	text-align: center;
+	margin-top: -15px;
+	margin-bottom: 10px;
+}
+
 #content .crumbs {
-  padding: 10px 0 10px;
+  padding: 10px 0 0 0;
   font-weight: 400;
   font-size: 14px;
   font-family: "Sentinel A", "Sentinel B", Georgia, serif;
@@ -110,14 +123,22 @@ ul {
     display: none;
   }
 	.tweet .byline {
+		float: left;
 		text-align: left;
 	}
 	.tweet .byline .permalink {
-		float: right;
+		display: inline-block !important;
 	}
 	.tweet .byline .permalink	svg {
-		padding-left: 5px;
 		width: 25px;
+	}
+
+	.tweet .twicon {
+		display: inline-block !important;
+	}
+	.tweet .twicon svg {
+		float: left;
+		height: 25px;
 	}
 
 	table.politicians{
@@ -253,7 +274,7 @@ h4.tweetTitle{
 }
 .tweet .byline .permalink	svg {
 	position: relative;
-	padding-left: 5px;
+	margin-top: 5px;
 	width: 25px;
 }
 .tweet .twicon {

@@ -108,12 +108,10 @@ module TweetsHelper
     end
 
     if html
-      source = tweet.details["source"].to_s.html_safe
       byline = t(:byline,
                   :scope => [:politwoops, :tweets],
                   :retweet => rt_text,
                   :when => tweet_when,
-                  :what => source,
                   :delay => delay).html_safe
       byline += "<div class=""permalink"">#{link_to(svg('link-icon'), tweet.twoops_url)}</div>".html_safe
       byline

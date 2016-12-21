@@ -7,10 +7,10 @@
   <div>Deleted Tweets from <%= @politician.display_name %>, <%= party_name_for(@politician) %><% if @politician.display_state %>-<%= @politician.display_state %><% end %></div>
 </div>
 
-<h1 class="app-name">Deleted Tweets from <%= @politician.display_name %>, <%= party_name_for(@politician) %><% if @politician.display_state %>-<%= @politician.display_state %><% end %></h1>
+<h1 class="tweet-detail">Deleted Tweets from <%= @politician.display_name %>, <%= party_name_for(@politician) %><% if @politician.display_state %>-<%= @politician.display_state %><% end %></h1>
 
 <div id="info">
-  <p class="about"><%= @politician.display_name %>'s accounts: <%= display_accounts(@accounts) %></p>
+  <p class="accounts"><%= @politician.display_name %>'s accounts: <%= display_accounts(@accounts) %></p>
 </div>
 <div id="all-container" class="tweet-content-container">
     <%= render :partial => "tweets/tweet", :collection => @tweet_map['all'], :object => :tweet %>

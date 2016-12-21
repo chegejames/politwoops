@@ -285,7 +285,7 @@ nl:
       index_heading: "Statistieken"
 
     tweets:
-      byline: "%{when} geleden verwijderd via %{what}"
+      byline: "%{when} geleden verwijderd"
       reply: "reply"
       retweet: "retweet"
 

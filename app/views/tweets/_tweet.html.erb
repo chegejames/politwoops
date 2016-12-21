@@ -11,7 +11,7 @@
       <h4 class="tweetTitle">
         <%= link_to "#{tweet.details['user']['name']} (#{tweet.politician.party.name.upcase}-#{tweet.politician.display_state})", politician_path(tweet.politician.user_name) %>
   	    <br />
-        <span><%= link_to "@#{tweet.details['user']['screen_name']}", tweet.politician.twitter_user_url, class: "accountHandle linkUnderline" %><div class="twicon"><%= link_to(svg('Twitter_Logo_Blue'), tweet.twitter_user_url) %></div></span>
+        <span><%= link_to "@#{tweet.details['user']['screen_name']}", tweet.politician.twitter_user_url, class: "accountHandle linkUnderline" %></span>
 	    </h4>
 	    <% if tweet.politician.status ==  4 %>
             <div class="inactiveMess">Politwoops no longer follows this account.</div>
@@ -22,6 +22,7 @@
 
     <div class="byline">
         <%= byline(tweet) %>
+        <div class="twicon"><%= link_to(svg('Twitter_Logo_Blue'), tweet.twitter_user_url) %></div>
     </div>
 
   </div>
