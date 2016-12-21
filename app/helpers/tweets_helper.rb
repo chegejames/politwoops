@@ -81,7 +81,7 @@ module TweetsHelper
       tweet_date = tweet.modified.strftime("%d %b").strip # 03 Jun
       tweet_when = "at <a class=""linkUnderline"" href=""/politwoops/tweet/#{tweet.id}"">#{tweet_time} on #{tweet_date}</a>"
     else
-      since_tweet = time_ago_in_words tweet.modified.strip
+      since_tweet = time_ago_in_words tweet.modified
       tweet_when = "<a class=""linkUnderline"" href=""/politwoops/tweet/#{tweet.id}"">#{since_tweet}</a> ago"
     end
     delete_delay = (tweet.modified - tweet.created).to_i
