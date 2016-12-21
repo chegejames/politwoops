@@ -58,6 +58,10 @@ class Tweet < ActiveRecord::Base
     "tweet/#{id}"
   end
 
+  def twitter_user_url
+    "https://www.twitter.com/#{user_name}"
+  end
+
   def twitter_url
     "https://www.twitter.com/#{user_name}/status/#{id}"
   end

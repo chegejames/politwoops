@@ -55,7 +55,7 @@ module TweetsHelper
     "http://www.twitter.com/#{tweet_user_name}/status/#{tweet_id}"
   end
 
-  def byline(tweet, html = true)
+  def tweet_times(tweet)
     if (Time.now - tweet.modified).to_i > (60 * 60 * 24 * 365)
       tweet_time = tweet.modified.strftime("%l:%M %p")
       tweet_date = tweet.modified.strftime("%d %b %y") # 03 Jun 12
@@ -66,6 +66,22 @@ module TweetsHelper
       tweet_when = "at <a class=""linkUnderline"" href=""/politwoops/tweet/#{tweet.id}"">#{tweet_time} on #{tweet_date}</a>"
     else
       since_tweet = time_ago_in_words tweet.modified
+      tweet_when = "<a class=""linkUnderline"" href=""/politwoops/tweet/#{tweet.id}"">#{since_tweet}</a> ago"
+    end
+    [tweet_date, tweet_time, tweet_when]
+  end
+
+  def byline(tweet, html = true)
+    if (Time.now - tweet.modified).to_i > (60 * 60 * 24 * 365)
+      tweet_time = tweet.modified.strftime("%l:%M %p").strip
+      tweet_date = tweet.modified.strftime("%d %b %y").strip # 03 Jun 12
+      tweet_when = "at <a class=""linkUnderline"" href=""/politwoops/tweet/#{tweet.id}"">#{tweet_time} on #{tweet_date}</a>"
+    elsif (Time.now - tweet.modified).to_i > (60 * 60 * 24)
+      tweet_time = tweet.modified.strftime("%l:%M %p").strip
+      tweet_date = tweet.modified.strftime("%d %b").strip # 03 Jun
+      tweet_when = "at <a class=""linkUnderline"" href=""/politwoops/tweet/#{tweet.id}"">#{tweet_time} on #{tweet_date}</a>"
+    else
+      since_tweet = time_ago_in_words tweet.modified.strip
       tweet_when = "<a class=""linkUnderline"" href=""/politwoops/tweet/#{tweet.id}"">#{since_tweet}</a> ago"
     end
     delete_delay = (tweet.modified - tweet.created).to_i
@@ -99,6 +115,7 @@ module TweetsHelper
                   :when => tweet_when,
                   :what => source,
                   :delay => delay).html_safe
+      byline += "<div class=""permalink"">#{link_to(svg('link-icon'), tweet.twoops_url)}</div>".html_safe
       byline
     else
       t :byline_text, :scope => [:politwoops, :tweets], :when => tweet_when, :delay => delay

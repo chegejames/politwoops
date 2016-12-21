@@ -52,9 +52,12 @@ p.byline {
   line-height: 1.4em;
 }
 
+#content .mobileintro {
+	display: none;
+}
+
 #content .about {
 	font-size: 16px;
-	font-weight: bold;
 	margin-top: -5px;
 }
 
@@ -90,6 +93,13 @@ ul {
 
 @media all and (max-width: 640px) {
 
+	#content .mobileintro {
+		display: block !important;
+		font-family: "Sentinel A", "Sentinel B", Georgia, serif !important;
+	  font-size: 1.3em !important;
+	  line-height: 1.0em !important;
+		padding-bottom: 5px;
+	}
 	.tweet {
 		padding: 0px !important;
 	}
@@ -99,17 +109,17 @@ ul {
   .tweet img {
     display: none;
   }
-	.tweet .byline a.twitter {
-		float: left;
+	.tweet .byline {
+		text-align: left;
 	}
-
-	.reply {
-		padding: 0px !important;
-		height: 30px !important;
-	}
-	.textReplace {
+	.tweet .byline .permalink {
 		float: right;
 	}
+	.tweet .byline .permalink	svg {
+		padding-left: 5px;
+		width: 25px;
+	}
+
 	table.politicians{
 		overflow: hidden;
 	}
@@ -127,6 +137,10 @@ ul {
 	}
 
 	#content .crumbs {
+		display: none;
+	}
+
+	#content .guff {
 		display: none;
 	}
 
@@ -156,7 +170,9 @@ ul {
 .tweet { border-bottom: 1px solid #e2e0de; padding-bottom: 23px; margin-bottom: 23px; padding-left: 50px;}
 
 .tweet-text {
+	float: left;
 	font-size: 16px;
+	margin-bottom: 5px;
 }
 
 .tweetTitle { font-weight: bold; font-size: 128%; margin-bottom: 5px;}
@@ -173,6 +189,7 @@ h4.tweetTitle{
 .contentLeft{
 	float: left;
 }
+
 .policount{
 	width: 83px;
 	font-size: 71.4%;
@@ -213,7 +230,7 @@ h4.tweetTitle{
 
 /** End of section */
 
-.tweet .content { float: left; width: 480px; }
+.tweet .content { float: left; width: 600px; }
 .tweet-content { margin-bottom: 8px;}
 .tweet .inactiveMess{
 	margin-bottom: 8px;
@@ -221,9 +238,6 @@ h4.tweetTitle{
 	font-size: 90%;
 	font-style: italic;
 	margin-top: -3px;
-	background: #FDFCEE;
-	border-top: 1px dotted #E7D26E;
-	border-bottom: 1px dotted #E7D26E;
 	padding: 0 4px;
 }
 
@@ -234,6 +248,22 @@ h4.tweetTitle{
 
 .tweet .byline, .tweet .byline { color: #8d8883; float: left;}
 .tweet .byline {font-size: 90%; float: left;}
+.tweet .byline .permalink {
+	float: right;
+}
+.tweet .byline .permalink	svg {
+	position: relative;
+	padding-left: 5px;
+	width: 25px;
+}
+.tweet .twicon {
+	display: inline-block;
+	vertical-align: middle;
+}
+.tweet .twicon svg {
+	float: left;
+	height: 25px;
+}
 .tweet .actions { float: left; }
 .reply { padding-left: 20px; height: 47px; width: 59px; padding-top: 45px;}
 
