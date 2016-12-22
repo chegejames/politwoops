@@ -113,6 +113,7 @@ module TweetsHelper
                   :retweet => rt_text,
                   :when => tweet_when,
                   :delay => delay).html_safe
+      byline += "<div class=""twicon"">#{link_to(svg('Twitter_Logo_Blue'), tweet.twitter_user_url)}</div>".html_safe
       byline += "<div class=""permalink"">#{link_to(svg('link-icon'), tweet.twoops_url)}</div>".html_safe
       byline
     else
