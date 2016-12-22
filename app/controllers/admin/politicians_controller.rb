@@ -1,8 +1,8 @@
-class Admin::PoliticiansController < Admin::AdminController 
+class Admin::PoliticiansController < Admin::AdminController
   def admin_list
     @politicians = Politician.all
     respond_to do |format|
-      format.html { render } 
+      format.html { render }
     end
   end
 
@@ -20,9 +20,9 @@ class Admin::PoliticiansController < Admin::AdminController
     @offices = Office.all
     @account_types = AccountType.all
     @related = @politician.get_related_politicians().sort_by(&:user_name)
-    
+
     @unmoderated = DeletedTweet.where(:reviewed=>false, :politician_id => @politician).length
- 
+
     respond_to do |format|
       format.html { render }
     end
@@ -39,13 +39,12 @@ class Admin::PoliticiansController < Admin::AdminController
   end
 
   def get_twitter_id
-    require 'twitter'
-    t = Twitter.user(params[:screen_name])
+    t = $twitter.user(params[:screen_name])
     @twitter_id = t.id
     respond_to do |format|
         format.json { render }
     end
-  end 
+  end
 
   def save_user
     if params[:user_name].to_s == ''
@@ -85,8 +84,8 @@ class Admin::PoliticiansController < Admin::AdminController
         pol.office = Office.where(:id => params[:office_id]).first
       end
 
-      pol.update_attributes(params)
-      
+      pol.update(params)
+
       pol.save!
       pol.reset_avatar
     end
@@ -97,7 +96,7 @@ class Admin::PoliticiansController < Admin::AdminController
             utweet.approved = 0
             utweet.review_message = "Bulk unapproved in admin"
             utweet.reviewed = 1
-            utweet.reviewed_at = Time.now 
+            utweet.reviewed_at = Time.now
             utweet.save()
 
         end
