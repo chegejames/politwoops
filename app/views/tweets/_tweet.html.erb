@@ -1,7 +1,6 @@
 <div id="tweet-<%= tweet.id %>" class="tweet">
   <a name="<%= tweet.id %>"></a>
 
-
 	<div class="contentLeft">
     <%= link_to (image_tag(default_avatar_url(tweet.politician), class: "politician-avatar")), politician_path(tweet.politician.user_name) %>
 	</div>
