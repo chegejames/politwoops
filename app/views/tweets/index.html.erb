@@ -2,6 +2,7 @@
    Politwoops: Explore the Tweets They Didn't Want You to See - ProPublica
 <% end %>
 
+<% if @brow %>
 <div class="crumbs">
   <div><%= link_to "Politwoops", root_path %> »</div>
   <% if @query %>
@@ -10,6 +11,7 @@
     <div>Deleted Tweets from <%= Politician::STATES[@state.to_sym] %> politicians</div>
   <% end %>
 </div>
+<% end %>
 
 <h1 class="app-name">Politwoops</h1>
 <h2 class="app-dek">Explore the Tweets They Didn't Want You to See</h2>
@@ -33,14 +35,10 @@
   <% end %>
 <% end %>
 
-<% if @tweets.length == 0 %>
-  No results for the filter options you selected.
-<% else %>
   <%= render :partial => "tweets/tweet", :collection => @tweets, :object => :tweet %>
 
   <%= render :template => "shared/pager" %>
 
   <%#= render :template => "shared/screenshotbox" %>
-<% end %>
 
 <p class="mobileintro">Are your deleted tweets displayed here but you think they shouldn't be? Here's <%= link_to "how to let us know", remove_path %>.</p>

@@ -13,20 +13,22 @@ class TweetsController < ApplicationController
   before_filter :enable_filter_form
 
   def index
-
-    @per_page_options = [20, 50]
+    @brow = false
+    @per_page_options = [20]
     @per_page = closest_value((params.fetch :per_page, 0).to_i, @per_page_options)
     @page = [params[:page].to_i, 1].max
-    @tweets = DeletedTweet.includes(:tweet_images, politician: :party).where(politician_id: @politicians, approved: true).order('created DESC').paginate(page: params[:page], per_page: @per_page, total_entries: @deleted_count)
+    @tweets = DeletedTweet.includes(:tweet_images, politician: :party).where(politician_id: @politicians, approved: true).order('created DESC').limit(@deleted_count).paginate(page: params[:page], per_page: @per_page, total_entries: @deleted_count)
 
     if params.has_key?(:q) and params[:q].present?
       # Rails prevents injection attacks by escaping things passed in with ?
       @query = params[:q]
       query = "%#{@query}%"
       @tweets = @tweets.where("content like ? ", query)
+      @brow = true
     end
 
     @state = params[:state]
+    @brow = true if @state
 
     respond_to do |format|
       format.html # index.html.erb

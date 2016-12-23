@@ -33,10 +33,10 @@ class ApplicationController < ActionController::Base
 
     @politicians = Politician.active
 
-    @deleted_count = DeletedTweet.count_by_sql "SELECT COUNT(*) FROM `deleted_tweets` WHERE `deleted_tweets`.`approved` = 1 AND `deleted_tweets`.`politician_id` IN (SELECT `politicians`.`id` FROM `politicians` WHERE `politicians`.`status` IN (1, 4))"
+    @deleted_count = 200
 
     #check for filters
-    @filters = {'state' => nil, 'party' => nil, 'office' => nil  }
+    @filters = {'state': nil, 'party': nil, 'office': nil}
     unless params.fetch('state', '').empty?
         @politicians = @politicians.where(state: params[:state])
         @filters['state'] = params[:state]
