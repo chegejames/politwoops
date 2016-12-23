@@ -3,4 +3,4 @@
 /web/bin/run-tweets-client -v -i &
 /web/bin/run-politwoops-worker -v -i &
 /web/bin/run-screenshot-worker -v -i &
-wait
+wait -n
