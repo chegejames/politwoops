@@ -1,12 +1,11 @@
 <div id="tweet-<%= tweet.id %>" class="tweet">
   <a name="<%= tweet.id %>"></a>
 
-	<div class="contentLeft">
-    <%= link_to (image_tag(default_avatar_url(tweet.politician), class: "politician-avatar")), politician_path(tweet.politician.user_name) %>
-	</div>
-
   <div class="content">
-    <div class="tweet-content">
+    <div class="avatar">
+      <%= link_to (image_tag(default_avatar_url(tweet.politician), class: "politician-avatar")), politician_path(tweet.politician.user_name) %>
+    </div>
+    <div class="tweet-header">
       <h4 class="tweetTitle">
         <%= link_to "#{tweet.details['user']['name']} (#{tweet.politician.party.name.upcase}-#{tweet.politician.display_state})", politician_path(tweet.politician.user_name) %>
   	    <br />
@@ -15,7 +14,8 @@
 	    <% if tweet.politician.status ==  4 %>
             <div class="inactiveMess">Politwoops no longer follows this account.</div>
         <% end %>
-
+    </div>
+    <div class="tweet-content">
       <p class="tweet-text"><%= format_tweet(tweet).to_s.html_safe %></p>
     </div>
 
