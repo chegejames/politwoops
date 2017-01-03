@@ -1,12 +1,12 @@
 .search-box {
 	width: 100%;
-  padding: 15px;
+  padding: 15px 15px 0 15px;
   background: #e9f0f8;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 //  border-top: 2px solid #CCC;
 
   h3 {
@@ -19,13 +19,13 @@
 
 	.examples {
 		font-family: 'Atlas Grotesk Web', Helvetica, sans-serif;
-	  margin: 10px 0 5px;
+	  margin: 10px 0 15px;
     font-size: 11px;
   }
 
 	.users {
 		font-family: 'Atlas Grotesk Web', Helvetica, sans-serif;
-		margin: -18px 0 0;
+		margin: -27px 0 0;
 		font-size: 11px;
 		float:right;
 	}
