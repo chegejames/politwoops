@@ -8,6 +8,7 @@
 
 <form id="admin-politician" action="/politwoops/admin/user/0/save" method="POST">
 <input type="hidden" name="twitter_id" id="twitter_id" value="" />
+<input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>"/>
 <ul>
   <li>User Name:
     <input id="user_name_input" name="user_name" value="" style="float:right;"/>
