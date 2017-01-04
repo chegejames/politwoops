@@ -65,8 +65,8 @@ Politwoops::Application.configure do
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_permissions => :public_read,
-#    :path => "/:attachment/:filename",
-#    :url => "https://s3.amazonaws.com/pp-projects-static/",
+    :path => "/:attachment/:filename",
+    :url => "https://s3.amazonaws.com/pp-projects-static/",
     :s3_credentials => {
       :bucket => 'pp-projects-static/politwoops',
       :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
