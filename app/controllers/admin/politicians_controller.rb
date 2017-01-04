@@ -1,4 +1,5 @@
 class Admin::PoliticiansController < Admin::AdminController
+
   def admin_list
     @politicians = Politician.all
     respond_to do |format|
@@ -21,7 +22,7 @@ class Admin::PoliticiansController < Admin::AdminController
     @account_types = AccountType.all
     @related = @politician.get_related_politicians().sort_by(&:user_name)
 
-    @unmoderated = DeletedTweet.where(:reviewed=>false, :politician_id => @politician).length
+    @unmoderated = DeletedTweet.where(reviewed: false, politician_id: @politician).length
 
     respond_to do |format|
       format.html { render }
@@ -56,11 +57,11 @@ class Admin::PoliticiansController < Admin::AdminController
     end
 
     if params[:id] == '0' then
-      existing = Politician.where(:user_name => params[:user_name])
+      existing = Politician.where(user_name: params[:user_name])
       if existing.count == 0
         #it's a new add
-        pol = Politician.create(:twitter_id => params[:twitter_id],
-                                :user_name => params[:user_name])
+        pol = Politician.create(twitter_id: params[:twitter_id],
+                                user_name: params[:user_name])
       else
         flash[:error] = "We already track @#{params[:user_name]}"
         pol = nil
@@ -71,27 +72,27 @@ class Admin::PoliticiansController < Admin::AdminController
     end
 
     if not pol.nil?
-      pol.party = Party.where(:id => params[:party_id]).first
+      pol.party = Party.where(id: params[:party_id]).first
       pol.status = params[:status]
       if params[:account_type_id] == '0' then
         pol.account_type = nil
       else
-        pol.account_type = AccountType.where(:id => params[:account_type_id]).first
+        pol.account_type = AccountType.where(id: params[:account_type_id]).first
       end
       if params[:office_id] == '0' then
         pol.office = nil
       else
-        pol.office = Office.where(:id => params[:office_id]).first
+        pol.office = Office.where(id: params[:office_id]).first
       end
 
-      pol.update(params)
+      pol.update(politician_params)
 
       pol.save!
       pol.reset_avatar
     end
 
     if params[:unapprove_all] and params[:unapprove_all] == 'on' then
-        unmod = DeletedTweet.where(:reviewed=>false, :politician_id => pol)
+        unmod = DeletedTweet.where(reviewed: false, politician_id: pol)
         unmod.each do |utweet|
             utweet.approved = 0
             utweet.review_message = "Bulk unapproved in admin"
@@ -112,6 +113,12 @@ class Admin::PoliticiansController < Admin::AdminController
     end
 
     redirect_to :back
+  end
+
+  private
+
+  def politician_params
+    params.permit(:user_name, :twitter_id, :party_id, :status, :profile_image_url, :state, :account_type_id, :office_id, :first_name, :middle_name, :last_name, :suffix, :avatar_file_name, :avatar_content_type, :avatar_file_size, :avatar_updated_at, :gender, :bioguide_id, :opencivicdata_id)
   end
 
 end
