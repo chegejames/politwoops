@@ -72,9 +72,7 @@ class Politician < ActiveRecord::Base
     STATES[state.to_sym]
   end
 
-  has_attached_file :avatar, { :path => ':base_path/avatars/:filename',
-                               :url => "/images/avatars/:filename",
-                               :default_url => '' }
+  has_attached_file :avatar
 
   belongs_to :party
 
@@ -95,6 +93,7 @@ class Politician < ActiveRecord::Base
   scope :showing, -> { where status: [CollectingAndShowing, NotCollectingButShowing] }
 
   validates_uniqueness_of :user_name, :case_sensitive => false
+  do_not_validate_attachment_file_type :avatar
 
   comma do
     user_name              'user_name'
@@ -212,7 +211,8 @@ class Politician < ActiveRecord::Base
 
         uri.open do |remote_file|
           Tempfile.open(["#{self.twitter_id}_", extension]) do |tmpfile|
-            tmpfile.puts remote_file.read().force_encoding('UTF-8')
+            tmpfile.write remote_file.read().force_encoding('UTF-8')
+            tmpfile.rewind
             self.avatar = tmpfile
             self.profile_image_url = image_url
             self.save!

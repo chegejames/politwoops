@@ -64,11 +64,12 @@ Politwoops::Application.configure do
 
   config.paperclip_defaults = {
     :storage => :s3,
-    :s3_permissions => :public_read,
     :path => "/:attachment/:filename",
-    :url => "https://s3.amazonaws.com/pp-projects-static/",
+    :url => ":s3_domain_url",
+    :s3_domain_url => "http://cfa-politwoops-ke.s3.amazonaws.com/",
+    :s3_region => "eu-west-1",
     :s3_credentials => {
-      :bucket => 'pp-projects-static/politwoops',
+      :bucket => 'cfa-politwoops-ke',
       :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     },
