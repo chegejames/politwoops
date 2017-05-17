@@ -6,16 +6,16 @@ namespace :db do
       next
     end
 
-    pkey = Tweet.columns.select(&:primary).first
-    if pkey.nil?
-      puts "The Tweet model is missing a primary key. Someting is very wrong."
-      next
-    end
+    #pkey = Tweet.columns.select(&:primary).first
+    #if pkey.nil?
+    #  puts "The Tweet model is missing a primary key. Someting is very wrong."
+    #  next
+    #end
 
-    if 8 == pkey.limit
-      puts "The primary key is already wide enough. Skipping."
-      next
-    end
+    #if 8 == pkey.limit
+    #  puts "The primary key is already wide enough. Skipping."
+    #  next
+    #end
 
     class WidenTweetPrimaryKey < ActiveRecord::Migration
       def self.up
