@@ -1,6 +1,7 @@
 AssetSync.configure do |config|
   config.fog_provider = 'AWS'
   config.fog_directory = 'cfa-politwoops-ke'
+  config.fog_region = 'eu-west-1'
 
   # https://console.aws.amazon.com/iam/home?region=us-east-1#users/rails_asset_sync
   # User: rails_asset_sync
