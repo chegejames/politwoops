@@ -21,6 +21,8 @@ ENV RAILS_ENV production
 #CMD bundle exec rake do_the_post_deploy_things
 
 RUN bundle exec rake assets:clobber assets:precompile assets:gzip assets:sync
+RUN bundle exec rake db:create
+RUN bundle exce rake db:schema:load
 
 EXPOSE 80
 CMD bundle exec unicorn -c ./config/unicorn.conf.rb
