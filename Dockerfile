@@ -19,6 +19,7 @@ ENV RAILS_ENV production
 # if you need to run post-deploy rake tasks that bake or precompute something
 # on the local filesystem, do it here
 #CMD bundle exec rake do_the_post_deploy_things
+#setup database
 
 RUN bundle exec rake db:create
 RUN bundle exec rake db:schema:load
