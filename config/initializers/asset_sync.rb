@@ -1,11 +1,11 @@
 AssetSync.configure do |config|
   config.fog_provider = 'AWS'
-  config.fog_directory = 'propublica'
+  config.fog_directory = 'cfa-politwoops-ke'
 
   # https://console.aws.amazon.com/iam/home?region=us-east-1#users/rails_asset_sync
   # User: rails_asset_sync
   config.aws_access_key_id = 'AKIAJDGVVCJDDOTUMLZQ'
-  config.aws_secret_access_key = '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'
+  config.aws_secret_access_key = 'c2PDEPreqdi4vRBSUJjyWcS/J9CXz3n5MDRJdaH1'
 
   # mimetype sometimes barfs on the things we gzip'd, so just explicitly set
   # content_type on everything we gzip (in lib/tasks/assets.rake)
