@@ -20,9 +20,11 @@ ENV RAILS_ENV production
 # on the local filesystem, do it here
 #CMD bundle exec rake do_the_post_deploy_things
 
-RUN bundle exec rake assets:clobber assets:precompile assets:gzip assets:sync
 RUN bundle exec rake db:create
-RUN bundle exce rake db:schema:load
+RUN bundle exec rake db:schema:load
+RUN bundle exec rake db:migrate
+RUN bundle exec rake assets:clobber assets:precompile assets:gzip assets:sync
+
 
 EXPOSE 80
 CMD bundle exec unicorn -c ./config/unicorn.conf.rb
