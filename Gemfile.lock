@@ -316,8 +316,6 @@ GEM
     simple_oauth (0.3.1)
     sitemap_generator (4.3.1)
       builder
-    skylight (0.10.5)
-      activesupport (>= 3.0.0)
     slop (3.6.0)
     sprockets (3.7.0)
       concurrent-ruby (~> 1.0)
@@ -385,7 +383,6 @@ DEPENDENCIES
   rmagick (~> 2.0)
   sass-rails
   sitemap_generator (~> 4.0)
-  skylight
   twitter
   twitter-text
   unicorn
@@ -393,4 +390,4 @@ DEPENDENCIES
   will_paginate (~> 3.1.0)
 
 BUNDLED WITH
-   1.12.5
+   1.14.6

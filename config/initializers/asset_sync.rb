@@ -7,7 +7,6 @@ AssetSync.configure do |config|
   # User: rails_asset_sync
   config.aws_access_key_id = 'AKIAJDGVVCJDDOTUMLZQ'
   config.aws_secret_access_key = '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'
-  #config.s3_bucket_region ='eu-west-1'
 
   # mimetype sometimes barfs on the things we gzip'd, so just explicitly set
   # content_type on everything we gzip (in lib/tasks/assets.rake)
