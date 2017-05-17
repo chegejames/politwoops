@@ -11,11 +11,11 @@ test:
   password: testpwd
 
 production:
-  database_url: mysql://mysql:b5cde8c9bff96999@dokku-mysql-rails-prod:3306/rails_prod
-  host: 172.17.0.2
+  #database_url: mysql://mysql:b5cde8c9bff96999@dokku-mysql-rails-prod:3306/rails_prod
+  host: dokku-mysql-rails-prod
   port: 3306	
   adapter: mysql2
   database: rails_prod
-  #username: prod
-  #password: prodpwd
+  username: mysql
+  password: b5cde8c9bff96999
   
