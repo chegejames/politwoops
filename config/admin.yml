@@ -1,0 +1,5 @@
+:username: admin
+:password: pass
+
+# used for obfuscating the RSS URL
+:rss_secret:
