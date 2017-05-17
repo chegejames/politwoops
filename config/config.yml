@@ -1,0 +1,30 @@
+:sitemap_default_url: 'http://host.com'
+
+:admin:
+  :username: admin
+  :password: pass
+
+# used for obfuscating the RSS URL
+:rss_secret:
+
+# used to sign session cookies, pick anything long and secure
+:session_secret:
+
+:twitter:
+    :consumer_key: iGcWKmUGWzndUvNkjZvAYWQUu
+    :consumer_secret: 4O2LuUI8GlR2C4PnSOMSusF3zGjSoLKADwZjhfkN58pCocZLps
+    :access_token: 111017072-ViWoz16A6tm28PH5LBG1EvVfimMUsOxwRRSlXF59
+    :access_token_secret: Qfs6SvO0ENSsVCU0UvoOXpxCFWGjtF6UX9OtDALow6RAc
+
+# These settings should mirror those set in the twitter
+# client configuration.
+:heartbeat_interval: 30
+:heartbeats_directory: /web/data/heartbeat
+:heartbeats_expected:
+  - tweets-client.py
+  - politwoops-worker.py
+  - screenshot-worker.py
+# Monitoring hosts are allowed to query /admin/status.json
+# without authentication.
+:monitoring_hosts:
+  - localhost
