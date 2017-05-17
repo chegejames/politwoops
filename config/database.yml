@@ -16,6 +16,6 @@ production:
   port: 3306	
   adapter: mysql2
   database: rails_prod
-  username: prod
-  password: prodpwd
+  #username: prod
+  #password: prodpwd
   
