@@ -51,3 +51,9 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 VOLUME ["/data"]
 CMD bin/run-collector-dockercmd
+
+RUN bundle exec rake assets:clobber assets:precompile assets:gzip assets:sync
+
+
+EXPOSE 80
+CMD bundle exec unicorn -c ./config/unicorn.conf.rb
