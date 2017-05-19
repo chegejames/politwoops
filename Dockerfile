@@ -20,7 +20,6 @@ ENV RAILS_ENV production
 
 ENV PHANTOMJS_VERSION 2.1.1
 
-ENV DOKKU_DOCKERFILE_CACHE_BUILD false
 # Commands
 RUN \
   apt-get install -y vim git wget libfreetype6 libfontconfig bzip2 && \
@@ -35,7 +34,6 @@ RUN ln -s /srv/var/casperjs/bin/casperjs /usr/local/bin/casperjs
 
 RUN apt-get install -y beanstalkd
 
-ENV DOKKU_DOCKERFILE_CACHE_BUILD true
 RUN git clone --depth 1 https://github.com/propublica/politwoops-tweet-collector.git && \
     mkdir -p /web/tmp/tweet-images && \
     easy_install pip && \
@@ -59,4 +57,5 @@ RUN bundle exec rake assets:clobber assets:precompile assets:gzip assets:sync
 
 
 EXPOSE 80
+EXPOSE 8080
 CMD bundle exec unicorn -c ./config/unicorn.conf.rb
