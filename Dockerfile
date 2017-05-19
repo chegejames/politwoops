@@ -1,7 +1,7 @@
 FROM ruby:2.2
 
 RUN apt-get update --fix-missing
-
+ENV DOKKU_DOCKERFILE_CACHE_BUILD true
 # application dependencies
 RUN apt-get install -y libmysqlclient-dev libpq-dev libcurl4-openssl-dev nodejs
 RUN apt-get install -y wget python-setuptools python-dev
@@ -11,6 +11,7 @@ WORKDIR /web/
 ADD Gemfile /web/
 ADD Gemfile.lock /web/
 ADD ./vendor/cache /web/vendor/cache
+
 RUN bundle install --deployment --without development --jobs=2
 
 ADD . /web/
@@ -19,6 +20,7 @@ ENV RAILS_ENV production
 
 ENV PHANTOMJS_VERSION 2.1.1
 
+ENV DOKKU_DOCKERFILE_CACHE_BUILD false
 # Commands
 RUN \
   apt-get install -y vim git wget libfreetype6 libfontconfig bzip2 && \
@@ -33,6 +35,7 @@ RUN ln -s /srv/var/casperjs/bin/casperjs /usr/local/bin/casperjs
 
 RUN apt-get install -y beanstalkd
 
+ENV DOKKU_DOCKERFILE_CACHE_BUILD true
 RUN git clone --depth 1 https://github.com/propublica/politwoops-tweet-collector.git && \
     mkdir -p /web/tmp/tweet-images && \
     easy_install pip && \
