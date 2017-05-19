@@ -1,7 +1,7 @@
 FROM ruby:2.2
 
 RUN apt-get update --fix-missing
-ENV DOKKU_DOCKERFILE_CACHE_BUILD true
+
 # application dependencies
 RUN apt-get install -y libmysqlclient-dev libpq-dev libcurl4-openssl-dev nodejs
 RUN apt-get install -y wget python-setuptools python-dev
