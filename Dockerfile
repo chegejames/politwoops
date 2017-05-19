@@ -57,5 +57,4 @@ RUN bundle exec rake assets:clobber assets:precompile assets:gzip assets:sync
 
 
 EXPOSE 80
-EXPOSE 8080
 CMD bundle exec unicorn -c ./config/unicorn.conf.rb

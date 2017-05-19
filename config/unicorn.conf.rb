@@ -1,6 +1,6 @@
 worker_processes 2
 working_directory "/web/"
-listen 8080
+listen 80
 preload_app true
 
 before_fork do |server, worker|
