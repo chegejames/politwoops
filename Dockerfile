@@ -24,10 +24,10 @@ ENV PHANTOMJS_VERSION 2.1.1
 RUN \
   apt-get install -y vim git wget libfreetype6 libfontconfig bzip2 && \
   mkdir -p /srv/var
-RUN wget -q --no-check-certificate -O /tmp/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2 https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2
-RUN tar -xjf /tmp/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2 -C /tmp
-RUN rm -f /tmp/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2
-RUN mv /tmp/phantomjs-$PHANTOMJS_VERSION-linux-x86_64/ /srv/var/phantomjs
+RUN wget -q --no-check-certificate -O /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2 https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
+RUN tar -xjf /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2 -C /tmp
+RUN rm -f /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2
+RUN mv /tmp/phantomjs-2.1.1-linux-x86_64/ /srv/var/phantomjs
 RUN ln -s /srv/var/phantomjs/bin/phantomjs /usr/local/bin/phantomjs
 RUN git clone https://github.com/casperjs/casperjs.git /srv/var/casperjs
 RUN ln -s /srv/var/casperjs/bin/casperjs /usr/local/bin/casperjs
