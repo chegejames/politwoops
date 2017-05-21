@@ -28,7 +28,7 @@ gem "rmagick", "~> 2.0"
 gem "paperclip", "~> 5.0.0"
 gem "aws-sdk"
 gem 'sass-rails'
-gem 'unicorn'#, '4.9.0'
+gem 'unicorn'
 gem 'dalli'
 gem 'skylight'
 
