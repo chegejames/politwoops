@@ -80,6 +80,11 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.10)
     erubis (2.7.0)
+    everypolitician (0.20.0)
+      everypolitician-popolo (>= 0.8.0)
+      require_all
+    everypolitician-popolo (0.8.0)
+      require_all
     excon (0.54.0)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
@@ -306,6 +311,7 @@ GEM
       json (>= 1.8)
       nokogiri (~> 1.5)
       trollop (~> 2.1)
+    require_all (1.4.0)
     rmagick (2.16.0)
     sass (3.4.22)
     sass-rails (5.0.6)
@@ -372,6 +378,7 @@ DEPENDENCIES
   beanstalk-client
   comma (~> 3.0)
   dalli
+  everypolitician
   fog-aws (~> 0.6)
   gender_detector
   httparty (~> 0.10.0)

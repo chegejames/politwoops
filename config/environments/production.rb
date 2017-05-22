@@ -4,11 +4,11 @@ Politwoops::Application.configure do
   # The production environment is meant for finished, "live" apps.
   # Code is not reloaded between requests
   config.eager_load = true
-  #config.cache_classes = true
+  config.cache_classes = true
 
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = true
-  #config.action_controller.perform_caching = true
+  config.action_controller.perform_caching = true
 
   config.log_level = :debug
 
@@ -16,7 +16,7 @@ Politwoops::Application.configure do
   #config.action_dispatch.x_sendfile_header = "X-Sendfile"
 
   # For nginx:
-  #config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
+  config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
 
   # If you have no front-end server that supports something like X-Sendfile,
   # just comment this out and Rails will serve the files
@@ -35,7 +35,7 @@ Politwoops::Application.configure do
 
   # Disable Rails's static asset server
   # In production, Apache or nginx will already do this
-  config.serve_static_files = true
+  config.serve_static_files = false
 
   #config.action_controller.asset_host = "https://static.propublica.org"
   #config.assets.prefix = "/rails/assets/politwoops"
@@ -56,11 +56,11 @@ Politwoops::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
-  #config.logger = ActiveSupport::TaggedLogging.new(Logger.new(STDOUT))
+  config.logger = ActiveSupport::TaggedLogging.new(Logger.new(STDOUT))
   #config.propub_url_root = "/politwoops"
-  #config.assets.compress = true
-  #config.assets.compile = true
-  #config.assets.digest = true
+  config.assets.compress = true
+  config.assets.compile = true
+  config.assets.digest = true
 
   config.paperclip_defaults = {
     :storage => :s3,

@@ -35,6 +35,8 @@ gem 'skylight'
 gem "fog-aws", "~> 0.6"
 gem 'asset_sync', '~> 1.1'
 
+gem "everypolitician"
+
 # allows the app to be run with "bundle exec unicorn" in development
 group :development do
   gem 'awesome_print'
