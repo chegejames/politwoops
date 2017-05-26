@@ -11,9 +11,10 @@ test:
   password: testpwd
 
 production:
+  host: politwoops.cfgmtx8ishfx.eu-west-1.rds.amazonaws.com
   port: 3306	
   adapter: mysql2
-  database: rails_prod
-  username: mysql
-  password: 98dd88848b69eb9b
+  database: politwoops_ke
+  username: politwoops
+  password: 5Orw73HzcXBgn6u
   
