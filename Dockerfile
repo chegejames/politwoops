@@ -34,7 +34,7 @@ RUN ln -s /srv/var/casperjs/bin/casperjs /usr/local/bin/casperjs
 
 RUN apt-get install -y beanstalkd
 
-RUN git clone --depth 1 https://github.com/propublica/politwoops-tweet-collector.git && \
+RUN git clone --depth 1 https://github.com/chegejames/politwoops-tweet-collector.git && \
     mkdir -p /web/tmp/tweet-images && \
     easy_install pip && \
     pip install -r politwoops-tweet-collector/requirements.txt
