@@ -12,6 +12,11 @@ public/images/avatars/*
 #/config/admin.yml
 #/config/config.yml
 #/config/database.yml
+#/config/tweets-client.ini
+#/config/secrets.yml
+#/config/skylight.yml
+/*~
+
 .*.swp
 .DS_Store
 *~

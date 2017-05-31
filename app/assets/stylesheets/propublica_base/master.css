@@ -217,10 +217,10 @@ body.special-article-sidebar #article_img_full_width_header_block h1{font-size: 
     #footer .wrapper { padding:50px 0;position:relative; }
     #footer a { color:#333;text-decoration:none; }
     #footer a:hover { color:#2262CC;text-decoration:underline; }
-    #footer-logo { color:#8e8e8e;float:left;padding:15px 10px 0;width:140px;min-height:100px; }/*background:#fcc;*/
+    #footer-logo { color:#8e8e8e;float:left;padding:15px 10px 0;width:200px;min-height:100px; }/*background:#fcc;*/
     #footer-logo p { line-height:1.5;margin-bottom:5px; }
   #footer-logo .dba { display: block; }
-    #footer-logo-image { background:url(https://d1t8xfi7n2gbr1.cloudfront.net/deploy/images/common/logo-footer-8.png) 0 0 repeat-x;height:20px;text-indent:-9999px;width:135px; }
+    #footer-logo-image { background:url(assets/images/standard-logo.png) 0 0 no-repeat;height:102px;text-indent:-9999px;width:197px;max-width:100%; }
     .footer-block { border-left:1px solid #d3d3d3;float:left;padding:0 15px;width:210px; }/*background:#ffc;*/
     .footer-block li { margin-bottom:10px; }
     #commons-notice { float:right;padding:0 0 0 17px;width:300px; }/*background:#fcf;*/
