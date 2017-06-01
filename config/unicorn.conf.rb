@@ -1,4 +1,4 @@
-worker_processes 2
+worker_processes 1
 working_directory "/web/"
 listen 80
 preload_app true
