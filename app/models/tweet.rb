@@ -55,7 +55,7 @@ class Tweet < ActiveRecord::Base
   end
 
   def twoops_url
-    "tweet/#{id}"
+    "/tweet/#{id}"
   end
 
   def twitter_user_url

@@ -43,8 +43,8 @@ class TweetsController < ApplicationController
   # GET /tweets/1
   # GET /tweets/1.xml
   def show
-    @tweet = DeletedTweet.includes(:politician).find(params[:id])
-
+    @tweet = DeletedTweet.includes(:tweet_images, :politician).find(params[:id])
+    @tweet_images = @tweet.tweet_images
     if (@tweet.politician.status != 1 and @tweet.politician.status != 4) or not @tweet.approved
       not_found
     end

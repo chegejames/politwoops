@@ -9,4 +9,4 @@
 
 <h1 class="tweet-detail">Deleted Tweet from <%= @tweet.details['user']['name'] %></h1>
 
-<%= render :partial => "tweets/tweet", :locals => {:tweet => @tweet} %>
+<%= render :partial => "tweets/show_tweet", :locals => {:tweet => @tweet, :tweet_images => @tweet_images} %>

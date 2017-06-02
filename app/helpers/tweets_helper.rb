@@ -59,14 +59,14 @@ module TweetsHelper
     if (Time.now - tweet.modified).to_i > (60 * 60 * 24 * 365)
       tweet_time = tweet.modified.strftime("%l:%M %p")
       tweet_date = tweet.modified.strftime("%d %b %y") # 03 Jun 12
-      tweet_when = "at <a class=""linkUnderline"" href=""/politwoops/tweet/#{tweet.id}"">#{tweet_time} on #{tweet_date}</a>"
+      tweet_when = "at <a class=""linkUnderline"" href=""/tweet/#{tweet.id}"">#{tweet_time} on #{tweet_date}</a>"
     elsif (Time.now - tweet.modified).to_i > (60 * 60 * 24)
       tweet_time = tweet.modified.strftime("%l:%M %p")
       tweet_date = tweet.modified.strftime("%d %b") # 03 Jun
-      tweet_when = "at <a class=""linkUnderline"" href=""/politwoops/tweet/#{tweet.id}"">#{tweet_time} on #{tweet_date}</a>"
+      tweet_when = "at <a class=""linkUnderline"" href=""/tweet/#{tweet.id}"">#{tweet_time} on #{tweet_date}</a>"
     else
       since_tweet = time_ago_in_words tweet.modified
-      tweet_when = "<a class=""linkUnderline"" href=""/politwoops/tweet/#{tweet.id}"">#{since_tweet}</a> ago"
+      tweet_when = "<a class=""linkUnderline"" href=""/tweet/#{tweet.id}"">#{since_tweet}</a> ago"
     end
     [tweet_date, tweet_time, tweet_when]
   end
@@ -75,14 +75,14 @@ module TweetsHelper
     if (Time.now - tweet.modified).to_i > (60 * 60 * 24 * 365)
       tweet_time = tweet.modified.strftime("%l:%M %p").strip
       tweet_date = tweet.modified.strftime("%d %b %y").strip # 03 Jun 12
-      tweet_when = "at <a class=""linkUnderline"" href=""/politwoops/tweet/#{tweet.id}"">#{tweet_time} on #{tweet_date}</a>"
+      tweet_when = "at <a class=""linkUnderline"" href=""/tweet/#{tweet.id}"">#{tweet_time} on #{tweet_date}</a>"
     elsif (Time.now - tweet.modified).to_i > (60 * 60 * 24)
       tweet_time = tweet.modified.strftime("%l:%M %p").strip
       tweet_date = tweet.modified.strftime("%d %b").strip # 03 Jun
-      tweet_when = "at <a class=""linkUnderline"" href=""/politwoops/tweet/#{tweet.id}"">#{tweet_time} on #{tweet_date}</a>"
+      tweet_when = "at <a class=""linkUnderline"" href=""/tweet/#{tweet.id}"">#{tweet_time} on #{tweet_date}</a>"
     else
       since_tweet = time_ago_in_words tweet.modified
-      tweet_when = "<a class=""linkUnderline"" href=""/politwoops/tweet/#{tweet.id}"">#{since_tweet}</a> ago"
+      tweet_when = "<a class=""linkUnderline"" href=""/tweet/#{tweet.id}"">#{since_tweet}</a> ago"
     end
     delete_delay = (tweet.modified - tweet.created).to_i
 

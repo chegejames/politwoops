@@ -23,8 +23,16 @@
         <%= byline(tweet) %>
     </div>
     
-    </div>
-
     <div class="clear"></div>
     
+    <div class="media">
+      <% tweet_images.each do | image | %>
+         <a href="<%= image.url %>"><%= image_tag image.url%></a>
+      <% end %>
+    </div>
+
+  </div>
+
+  <div class="clear"></div>
+
 </div>
