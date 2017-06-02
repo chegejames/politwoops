@@ -4,19 +4,20 @@ Politwoops::Application.configure do
   # The production environment is meant for finished, "live" apps.
   # Code is not reloaded between requests
   config.eager_load = true
-  #config.cache_classes = true
+  config.cache_classes = true
 
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = true
-  #config.action_controller.perform_caching = true
+  config.action_controller.perform_caching = true
 
   config.log_level = :debug
+ 
 
   # Specifies the header that your server uses for sending files
   #config.action_dispatch.x_sendfile_header = "X-Sendfile"
 
   # For nginx:
-  #config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
+  config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
 
   # If you have no front-end server that supports something like X-Sendfile,
   # just comment this out and Rails will serve the files
@@ -58,9 +59,9 @@ Politwoops::Application.configure do
 
   #config.logger = ActiveSupport::TaggedLogging.new(Logger.new(STDOUT))
   #config.propub_url_root = "/politwoops"
-  #config.assets.compress = true
-  #config.assets.compile = true
-  #config.assets.digest = true
+  config.assets.compress =true
+  config.assets.compile = false
+  config.assets.digest = true
 
   config.paperclip_defaults = {
     :storage => :s3,

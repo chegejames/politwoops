@@ -118,14 +118,15 @@ span.update {
   h5 {
     height: 40px;
     text-align: left;
-    width: 320px;
+    width: 120px;
     float: left;
 
     a {
-      height: 65px;
-      width: 300px;
+      height: 45px;
+      width: 120px;
       display: inline-block;
-      background: url("<%= image_path("standard-logo.png") %>") 0 -5px no-repeat;
+      background: url("<%= image_path("standard-logo.png") %>") 0 10px no-repeat;
+      background-size: contain;
     }
   }
 
@@ -284,7 +285,7 @@ footer {
   border-top: 2px solid #F5F0E9;
 }
 
-#footer-logo-image { background: url("<%= image_path("standard-footer-logo.png") %>") 0 0 repeat-x; background-size: 197px 102px;}
+#footer-logo-image { background: url("<%= image_path("standard-footer-logo.png") %>") 0 0 no-repeat; background-size: contain;}
 
 #footer .wrapper { padding: 30px 0; }
 
