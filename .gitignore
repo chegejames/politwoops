@@ -9,12 +9,12 @@ public/images/avatars/*
 /*.csv
 */.DS_Store
 /unicorn.rb
-#/config/admin.yml
-#/config/config.yml
-#/config/database.yml
-#/config/tweets-client.ini
-#/config/secrets.yml
-#/config/skylight.yml
+/config/admin.yml
+/config/config.yml
+/config/database.yml
+/config/tweets-client.ini
+/config/secrets.yml
+/config/skylight.yml
 /*~
 
 .*.swp

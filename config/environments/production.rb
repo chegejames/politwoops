@@ -71,8 +71,8 @@ Politwoops::Application.configure do
     :s3_region => "eu-west-1",
     :s3_credentials => {
       :bucket => 'cfa-politwoops-ke',
-      :access_key_id =>'AKIAIPQ352WR6VGWPZJA',
-      :secret_access_key => "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"
+      :access_key_id =>EVN['access_key_id']
+      :secret_access_key => ENV['secret_access_key']
     },
     :interpolations => {
       :base_path => "/images"
