@@ -65,6 +65,10 @@ class Tweet < ActiveRecord::Base
   def twitter_url
     "https://www.twitter.com/#{user_name}/status/#{id}"
   end
+  
+  def has_images?
+    not self.tweet_images.empty?
+  end
 
   def format
     {
