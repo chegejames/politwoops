@@ -18,9 +18,12 @@ propublica.views.stateSelect = propublica.View.extend({
   tag: "select",
 
   render : function() {
-  	$(".state-select").change(function () {
-      var val = this.value;
-      window.location = RAILS_ROOT + "?state=" + val;
+      $(".state-select").change(function () {
+	  var params = $(".state-select").map(function()
+					      { return this.name+"="+this.value; }
+					     ).toArray();
+	  params = params.join("&");
+	  window.location = POLITICIANS_PATH + "?" + params; 
     });
   }
 

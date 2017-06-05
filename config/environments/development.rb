@@ -38,7 +38,7 @@ Politwoops::Application.configure do
     :s3_region => "eu-west-1",
     :s3_credentials => {
       :bucket => 'cfa-politwoops-ke',
-      :access_key_id => ENV['access_key_id']
+      :access_key_id => ENV['access_key_id'],
       :secret_access_key => ENV['secret_access_key']
     },
     :interpolations => {
