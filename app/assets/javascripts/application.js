@@ -18,12 +18,27 @@ propublica.views.stateSelect = propublica.View.extend({
   tag: "select",
 
   render : function() {
-      $(".state-select").change(function () {
-	  var params = $(".state-select").map(function()
-					      { return this.name+"="+this.value; }
-					     ).toArray();
-	  params = params.join("&");
-	  window.location = POLITICIANS_PATH + "?" + params; 
+  	$(".state-select").change(function () {
+      var val = this.value;
+      window.location = RAILS_ROOT + "?state=" + val;
+    });
+  }
+
+})
+
+
+propublica.views.filterPoliticians = propublica.View.extend({
+
+  cssClass : "politician-select",
+  tag: "select",
+
+  render : function() {
+      $(".politician-select").change(function () {                                                                                                                                                               
+          var params = $(".politician-select").map(function()
+                                              { return this.name+"="+this.value; }
+                                             ).toArray();                                             
+          params = params.join("&");
+          window.location = POLITICIANS_PATH + "?" + params;
     });
   }
 
