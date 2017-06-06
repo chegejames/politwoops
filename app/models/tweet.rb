@@ -2,6 +2,7 @@
 class Tweet < ActiveRecord::Base
   belongs_to :politician
 
+
   has_many :tweet_images, :foreign_key => "tweet_id"
 
   scope :with_content, -> { where.not content: nil}
@@ -29,6 +30,15 @@ class Tweet < ActiveRecord::Base
     Tweet.find(Tweet.pluck(:id).shuffle.first)
   end
 
+
+  def self.published_in(year, month)
+    where("YEAR(created) = #{year} AND MONTH(created) = #{month}")
+  end
+
+  def self.modified_in(year, month)
+    where("YEAR(modified) = #{year} AND MONTH(modified) = #{month}")
+  end
+  
   def details
     JSON.parse(tweet)
   end
