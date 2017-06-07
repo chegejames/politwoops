@@ -81,7 +81,7 @@ ActiveRecord::Schema.define(version: 20160125211055) do
 
   create_table "politicians", force: :cascade do |t|
     t.string   "user_name",           limit: 64,                  null: false
-    t.integer  "twitter_id",          limit: 4,                   null: false
+    t.integer  "twitter_id",          limit: 8,                   null: false
     t.integer  "party_id",            limit: 4
     t.integer  "status",              limit: 4,     default: 1
     t.string   "profile_image_url",   limit: 255
@@ -109,6 +109,15 @@ ActiveRecord::Schema.define(version: 20160125211055) do
     t.string   "what",       limit: 255
     t.date     "when"
     t.integer  "amount",     limit: 4
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "trends", force: :cascade do |t|
+    t.integer  "year",       limit: 4
+    t.integer  "month",      limit: 4
+    t.string   "name",       limit: 255
+    t.text     "value",      limit: 65535
     t.datetime "created_at"
     t.datetime "updated_at"
   end

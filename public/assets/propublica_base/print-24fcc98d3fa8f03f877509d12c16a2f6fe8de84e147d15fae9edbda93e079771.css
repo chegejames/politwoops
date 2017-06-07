@@ -92,7 +92,6 @@ h1 a:hover {
 /* line 129, ../sass/_globals.scss */
 .form-fields, input[type="email"], input[type="text"], textarea {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6);
   border: 0;
   padding: 4px 5px;
@@ -101,10 +100,8 @@ h1 a:hover {
 /* line 135, ../sass/_globals.scss */
 .btn-input, input[type="submit"] {
   background: #1d85ea;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1d85ea), to(#0a65bc));
   background: -moz-linear-gradient(top, #1d85ea, #0a65bc);
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   border: 0;
   margin-right: 5px;
@@ -121,10 +118,8 @@ h1 a:hover {
 .btn-input:hover, input[type="submit"]:hover {
   text-decoration: none;
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.53);
-  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.53);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.53);
   background: #0a65bc;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0a65bc), to(#1d85ea));
   background: -moz-linear-gradient(top, #0a65bc, #1d85ea);
 }
 
@@ -136,7 +131,6 @@ h1 a:hover {
 /* line 179, ../sass/_globals.scss */
 .popper-shadowed {
   -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -198,7 +192,6 @@ h1 {
 /* line 36, ../sass/print.scss */
 #content, #page {
   -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-  -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   padding: 0;
   width: 90%;
@@ -416,7 +409,6 @@ footer.shell .republish #foot-tab-republish {
   top: 0;
   left: 0;
   -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-  -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 

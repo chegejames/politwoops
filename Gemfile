@@ -10,9 +10,14 @@ gem 'virtus', '~> 1.0.2'
 gem 'httparty', '~> 0.10.0' # used for syncing Twitter avatars
 gem 'sitemap_generator', '~> 4.0'
 
+
 # interacting with Twitter
 gem "twitter"
 gem "oauth"
+
+#gem 'rake', '~> 0.9.2'
+gem 'json'
+
 
 gem 'twitter-text' # parsing hashtags and usernames
 gem "comma", "~> 3.0"
@@ -27,6 +32,7 @@ gem "rmagick", "~> 2.0"
 gem "paperclip", "~> 5.0.0"
 gem "aws-sdk"
 gem 'sass-rails'
+gem 'bootstrap'
 gem 'unicorn'
 gem 'dalli'
 gem 'skylight'
