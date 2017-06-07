@@ -1,1 +1,21 @@
-<h2><%= trend.name %></h2>
+<h2><%= trend.name.gsub('_', ' ').capitalize %></h2>
+<table class="table table-condensed table-stripped table-hover">
+  <tr>
+    <th>Name</th>
+    <th>Deleted</th>
+  </tr>
+  <tbody>
+  <% JSON.parse(trend.value).each do |name, value| %>
+  <tr>
+    <td>
+      <%= name %>
+    </td>
+    <td>
+      <%= value %>
+    </td>
+  </tr>
+  <% end %>
+  </tbody>
+</table>
+
+

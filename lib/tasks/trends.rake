@@ -1,8 +1,8 @@
 namespace :trends do
   desc 'Generate trends'
   task :generate => :environment do
-    year = 2011
-    month = 10
+    year = 2017
+    month = 05
     tweets = Tweet.deleted.modified_in(year, month)
     
     # get top deleters
@@ -17,7 +17,7 @@ namespace :trends do
       :year => year,
       :month => month,
       :name => 'top_deleters',
-      :value => sorted_users.slice(0, 5)
+      :value => sorted_users.slice(0, 5).to_json
     })
     t.save
     
@@ -34,7 +34,7 @@ namespace :trends do
       :year => year,
       :month => month,
       :name => 'top_party_deleters',
-      :value => sorted_parties.slice(0, 5)
+      :value => sorted_parties.slice(0, 5).to_json
     })
     t.save
     
@@ -58,17 +58,18 @@ namespace :trends do
     p fastest_tweet
     p slowest_time
     p slowest_tweet
+    times  = {
+      avg_time:  avg_time,
+      #:slowest_time: slowest_time,
+      #:slowest_id: slowest_tweet.id.to_s
+      fastest_time: fastest_time,
+      fastest_tweet: fastest_tweet.id.to_s
+    }.to_a
     t = Trend.new({
       :year => year,
       :month => month,
       :name => 'delete_lag',
-      :value => {
-        :avg_time => avg_time,
-        #:slowest_time => slowest_time,
-        #:slowest_id => slowest_tweet.id.to_s
-        :fastest_time => fastest_time,
-        :fastest_tweet => fastest_tweet.id.to_s
-      }
+      :value => times.to_json
     })
     t.save
     
@@ -82,7 +83,7 @@ namespace :trends do
       :year => year,
       :month => month,
       :name => 'days',
-      :value => days
+      :value => days.to_a.to_json
     })
     t.save
     
@@ -97,7 +98,7 @@ namespace :trends do
       :year => year,
       :month => month,
       :name => 'words',
-      :value => sorted_words.slice(0, 50)
+      :value => sorted_words.slice(0, 50).to_json
     })
     t.save
   end

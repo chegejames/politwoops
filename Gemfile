@@ -32,6 +32,7 @@ gem "rmagick", "~> 2.0"
 gem "paperclip", "~> 5.0.0"
 gem "aws-sdk"
 gem 'sass-rails'
+gem 'bootstrap'
 gem 'unicorn'
 gem 'dalli'
 gem 'skylight'

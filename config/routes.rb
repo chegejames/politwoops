@@ -3,7 +3,7 @@ Politwoops::Application.routes.draw do
   root :to => "tweets#index"
   
   get "statistics/" => "statistics#index", :as => :statistics
-  get "trends/:year/:month" => "trends#index", :as => :trends
+  get "trends/(:year/:month)" => "trends#index", :as => :trends
   get "index(.:format)" => "tweets#index", :as => :index
   get "tweet/:id" => "tweets#show", :as => :tweet
   get "tweet/:tweet_id/thumb/:basename.:format" => "tweets#thumbnail"
