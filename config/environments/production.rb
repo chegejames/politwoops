@@ -60,7 +60,7 @@ Politwoops::Application.configure do
   #config.logger = ActiveSupport::TaggedLogging.new(Logger.new(STDOUT))
   #config.propub_url_root = "/politwoops"
   config.assets.compress =true
-  config.assets.compile = false
+  config.assets.compile = true
   config.assets.digest = true
 
   config.paperclip_defaults = {

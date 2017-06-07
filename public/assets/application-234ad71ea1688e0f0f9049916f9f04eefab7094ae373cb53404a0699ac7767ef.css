@@ -195,33 +195,33 @@ div#party-tweeting table td:first-child {
 }
 
 
-/* line 5, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 5, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #politwoops-app a, #politwoops-app a:hover {
   color: #237EB5;
 }
 
-/* line 9, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 9, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #content .disabled {
   background-color: transparent !important;
   color: black !important;
   text-decoration: none;
 }
 
-/* line 15, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 15, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #content h1 {
   font-family: "Sentinel A", "Sentinel B", Georgia, serif;
   font-size: 2.2em;
   font-weight: bold;
 }
 
-/* line 21, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 21, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #content h1.app-name {
   font-size: 3.5em;
   margin: 40px 0 0 0;
   text-align: center;
 }
 
-/* line 27, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 27, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #content h1.tweet-detail {
   font-size: 2.0em;
   margin: 10px 0 20px 0;
@@ -229,7 +229,7 @@ div#party-tweeting table td:first-child {
   text-align: center;
 }
 
-/* line 34, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 34, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #content h2.app-dek {
   font-family: "Sentinel A", "Sentinel B", Georgia, serif;
   font-weight: 500;
@@ -239,7 +239,7 @@ div#party-tweeting table td:first-child {
   margin: 0px 0px 25px 0;
 }
 
-/* line 43, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 43, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #content h3 {
   font-family: "Sentinel A", "Sentinel B", Georgia, serif;
   font-style: normal;
@@ -248,31 +248,31 @@ div#party-tweeting table td:first-child {
   padding: 20px 0 10px 0;
 }
 
-/* line 51, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 51, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 p.byline {
   margin: 0 0 30px 0;
   font-family: 'Sentinel A', 'Sentinel B', Georgia, serif;
   font-size: 15px;
 }
 
-/* line 57, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 57, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #content .guff {
   font-size: 1.3em;
   line-height: 1.4em;
 }
 
-/* line 62, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 62, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #content .mobileintro {
   display: none;
 }
 
-/* line 66, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 66, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #content .about {
   font-size: 16px;
   margin-top: -5px;
 }
 
-/* line 71, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 71, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #content .accounts {
   font-size: 16px;
   text-align: center;
@@ -280,7 +280,7 @@ p.byline {
   margin-bottom: 15px;
 }
 
-/* line 78, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 78, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #content .crumbs {
   text-align: center;
   padding: 15px 0 10px 0;
@@ -289,18 +289,18 @@ p.byline {
   font-family: "Sentinel A", "Sentinel B", Georgia, serif;
 }
 
-/* line 86, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 86, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #content .crumbs > div {
   display: inline-block;
   margin-right: 2px;
 }
 
-/* line 91, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 91, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #content .crumbs > div a {
   display: inline-block;
 }
 
-/* line 95, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 95, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 ul {
   list-style-type: disc;
   list-style-position: inside;
@@ -309,13 +309,13 @@ ul {
   margin: 0 0 4px 0;
   padding-bottom: 5px;
 }
-/* line 102, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 102, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 ul li {
   font-size: 15px;
 }
 
 @media all and (max-width: 640px) {
-  /* line 109, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 109, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   #content .mobileintro {
     display: block !important;
     font-family: "Sentinel A", "Sentinel B", Georgia, serif !important;
@@ -324,25 +324,25 @@ ul li {
     padding-bottom: 5px;
   }
 
-  /* line 116, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 116, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   .avatar {
     float: left;
     margin-right: 5px !important;
     margin-bottom: 10px !important;
   }
 
-  /* line 121, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 121, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   .tweet-header {
     position: relative;
     padding-left: 10px;
   }
 
-  /* line 125, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 125, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   .tweet {
     padding: 0px !important;
   }
 
-  /* line 128, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 128, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   .tweet img {
     float: left;
     height: 45px !important;
@@ -352,14 +352,14 @@ ul li {
     padding: 4px;
   }
 
-  /* line 136, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 136, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   h4.tweetTitle {
     max-width: 250px !important;
     float: left;
     padding-left: -10px;
   }
 
-  /* line 141, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 141, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   .tweet-content {
     float: left;
     max-width: 300px;
@@ -367,84 +367,84 @@ ul li {
     margin-bottom: -5px !important;
   }
 
-  /* line 147, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 147, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   .byline {
     text-align: left !important;
     max-width: 300px;
     clear: left !important;
   }
 
-  /* line 152, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 152, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   .permalink {
     width: 25px;
     float: none !important;
     display: inline-block !important;
   }
 
-  /* line 157, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 157, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   .permalink svg {
     float: none !important;
     width: 25px;
     top: 4px !important;
   }
 
-  /* line 162, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 162, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   .tweet .twicon {
     display: inline-block !important;
   }
 
-  /* line 165, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 165, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   .tweet .twicon svg {
     float: left;
     height: 25px;
   }
 
-  /* line 170, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 170, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   table.politicians {
     overflow: hidden;
   }
 
-  /* line 173, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 173, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   table.politicians td.name span {
     width: 50%;
   }
 
-  /* line 176, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 176, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   table.politicians td.state span {
     width: 50%;
   }
 
-  /* line 179, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 179, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   table.politicians td.office span {
     display: none;
   }
 
-  /* line 182, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 182, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   table.politicians td.party span {
     display: none;
   }
 
-  /* line 186, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 186, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   #content .crumbs {
     display: none;
   }
 
-  /* line 190, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 190, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   #content .guff {
     display: none;
   }
 
-  /* line 194, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 194, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   #content h1.app-name {
     padding-bottom: 10px;
   }
 
-  /* line 198, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 198, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   #content h2.app-dek {
     display: none;
   }
 
-  /* line 202, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 202, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   #content h3 {
     font-family: "Sentinel A", "Sentinel B", Georgia, serif;
     font-style: normal;
@@ -453,13 +453,13 @@ ul li {
     padding: 20px 0 10px 0;
   }
 
-  /* line 210, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+  /* line 210, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
   #content h3.follow {
     display: none;
   }
 }
 /* tweets */
-/* line 217, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 217, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .avatar {
   width: 10%;
   float: left;
@@ -467,12 +467,12 @@ ul li {
   margin-right: 15px;
 }
 
-/* line 223, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 223, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet-header {
   margin-left: 5px;
 }
 
-/* line 227, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 227, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet {
   border-bottom: 1px solid #e2e0de;
   padding-bottom: 23px;
@@ -480,7 +480,7 @@ ul li {
   padding-left: 50px;
 }
 
-/* line 229, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 229, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet-text {
   float: left;
   font-size: 16px;
@@ -488,37 +488,37 @@ ul li {
   clear: left;
 }
 
-/* line 235, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 235, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweetTitle {
   font-weight: bold;
   font-size: 140%;
   margin-bottom: 5px;
 }
 
-/* line 236, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 236, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 h4.tweetTitle {
   font-family: "helvetica neue", helvetica, arial, sans-serif;
 }
 
-/* line 239, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 239, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweetTitle a:link, .tweetTitle a:active, .tweetTitle a:visited {
   text-decoration: none;
   color: #068797;
 }
 
-/* line 240, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 240, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweetTitle a:hover {
   color: #063E5C;
   text-decoration: underline;
 }
 
-/* line 241, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 241, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweetTitle span {
   font-size: 72%;
   font-color: #8D8883;
 }
 
-/* line 245, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 245, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet img {
   height: 55px;
   margin: 0 20px 0 0;
@@ -527,12 +527,12 @@ h4.tweetTitle {
   padding: 4px;
 }
 
-/* line 246, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 246, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .contentLeft {
   float: left;
 }
 
-/* line 250, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 250, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .policount {
   width: 83px;
   font-size: 71.4%;
@@ -541,13 +541,13 @@ h4.tweetTitle {
   text-align: center;
 }
 
-/* line 257, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 257, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .policount em {
   font-weight: bold;
   font-style: normal;
 }
 
-/* line 261, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 261, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .policount .number {
   font-size: 210%;
   color: #e7d26e;
@@ -555,27 +555,27 @@ h4.tweetTitle {
   font-weight: 500;
 }
 
-/* line 268, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 268, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweetTitle a.linkUnderline:link, .tweetTitle a.linkUnderline:visited, a.linkUnderline:link, a.linkUnderline:visited {
   border-bottom: 1px dotted #5ca8b1;
   font-weight: normal;
   color: #8D8883;
 }
 
-/* line 273, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 273, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweetTitle a.linkUnderline:active, a.linkUnderline:active, .tweetTitle a.linkUnderline:hover, a.linkUnderline:hover {
   text-decoration: none;
   color: #063E5C;
 }
 
 /** For Ali: CSS I added to deal with screenshots of links */
-/* line 281, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 281, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet .images h3 {
   margin-top: 30px;
   font-size: 120%;
 }
 
-/* line 282, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 282, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet .images img.screenshot {
   float: left;
   max-width: 160px;
@@ -589,18 +589,18 @@ h4.tweetTitle {
 }
 
 /** End of section */
-/* line 290, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 290, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet .content {
   float: left;
   width: 600px;
 }
 
-/* line 291, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 291, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet-content {
   margin-bottom: 8px;
 }
 
-/* line 292, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 292, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet .inactiveMess {
   margin-bottom: 8px;
   color: #8D8883;
@@ -610,34 +610,34 @@ h4.tweetTitle {
   padding: 0 4px;
 }
 
-/* line 301, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 301, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet-content a {
   display: inline-block;
 }
 
-/* line 305, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 305, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .byline {
   clear: left;
 }
 
-/* line 309, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 309, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet .byline, .tweet .byline {
   color: #8d8883;
   float: left;
 }
 
-/* line 310, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 310, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet .byline {
   font-size: 90%;
   float: left;
 }
 
-/* line 311, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 311, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet .byline .permalink {
   float: right;
 }
 
-/* line 314, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 314, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet .byline .permalink svg {
   position: relative;
   margin-top: 5px;
@@ -645,24 +645,24 @@ h4.tweetTitle {
   margin-left: -5px;
 }
 
-/* line 320, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 320, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet .twicon {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 324, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 324, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet .twicon svg {
   float: left;
   height: 25px;
 }
 
-/* line 328, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 328, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet .actions {
   float: left;
 }
 
-/* line 329, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 329, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .reply {
   padding-left: 20px;
   height: 47px;
@@ -670,44 +670,44 @@ h4.tweetTitle {
   padding-top: 45px;
 }
 
-/* line 331, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 331, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .titleParty {
   text-transform: uppercase;
 }
 
-/* line 333, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 333, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .textReplace {
   display: block;
 }
 
-/* line 337, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 337, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 ul {
   width: auto;
 }
 
-/* line 339, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 339, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 li {
   margin-right: 1em;
 }
 
-/* line 341, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 341, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #pager {
   font-size: 95%;
   margin: 20px 0 50px 0;
   text-align: center;
 }
 
-/* line 347, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 347, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #pager a {
   margin-left: 5px;
 }
 
-/* line 348, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 348, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .previous_page {
   margin-right: 10px;
 }
 
-/* line 353, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 353, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet .actions .button {
   text-indent: 0;
   height: 48px;
@@ -721,7 +721,7 @@ li {
   -moz-border-radius: 5px;
 }
 
-/* line 366, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 366, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .tweet .actions .button-small {
   text-indent: 0;
   height: 48px;
@@ -736,49 +736,49 @@ li {
   -moz-border-radius: 5px;
 }
 
-/* line 380, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 380, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .numResults {
   margin-top: 20px;
 }
 
-/* line 384, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 384, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .numResults li {
   display: inline;
 }
 
-/* line 388, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 388, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 table.politicians td, table.politicians td img {
   vertical-align: middle;
 }
 
-/* line 393, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 393, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 table.politicians img {
   width: 73px;
   height: 73px;
   padding: 4px;
 }
 
-/* line 398, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 398, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 table.politicians td.name span {
   width: 185px;
 }
 
-/* line 401, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 401, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 table.politicians td.state span {
   width: 116px;
 }
 
-/* line 404, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 404, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 table.politicians td.office span {
   width: 138px;
 }
 
-/* line 407, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 407, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 table.politicians td.party span {
   line-height: 1.1em;
 }
 
-/* line 410, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 410, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 table.politicians td.party em {
   font-size: 85%;
   display: block;
@@ -787,30 +787,30 @@ table.politicians td.party em {
   font-style: italic;
 }
 
-/* line 417, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 417, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 table.politicians .img {
   width: 73px;
   padding-right: 0;
   padding-left: 12px;
 }
 
-/* line 422, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 422, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 table.politicians tr.even {
   background: #f8fcfa;
 }
 
-/* line 425, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 425, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 table.politicians tr {
   border-bottom: 1px solid #d7e4dc;
 }
 
-/* line 428, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 428, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 table.politicians td {
   padding: 12px 0;
   text-align: left;
 }
 
-/* line 432, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 432, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 table.politicians td span {
   height: 73px;
   display: table-cell;
@@ -818,17 +818,17 @@ table.politicians td span {
   padding: 0 12px;
 }
 
-/* line 438, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 438, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 table.politicians td:last-child span, table.politicians .img {
   border: 0;
 }
 
-/* line 441, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 441, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 table.politicians a {
   font-weight: bold;
 }
 
-/* line 445, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 445, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .form-inline li {
   display: block;
   float: left;
@@ -836,19 +836,19 @@ table.politicians a {
   margin-right: 20px;
 }
 
-/* line 452, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 452, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 form#filter {
   margin-bottom: 26px;
 }
 
-/* line 455, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 455, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .title {
   background: url(/images/bg_filter.png) center bottom repeat-x;
   padding-bottom: 1px;
   margin-bottom: 23px;
 }
 
-/* line 460, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 460, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 label {
   display: block;
   width: 100%;
@@ -856,12 +856,12 @@ label {
   font-weight: bold;
 }
 
-/* line 466, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 466, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 input[type=radio] + label {
   display: inline;
 }
 
-/* line 470, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 470, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .state-drop {
   overflow: hidden;
   background-color: white;
@@ -870,7 +870,7 @@ input[type=radio] + label {
   position: relative;
 }
 
-/* line 478, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 478, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 .fancy-btn {
   padding: 0px 10px;
   -webkit-border-radius: 04px;
@@ -911,34 +911,34 @@ input[type=radio] + label {
   margin-left: 1%;
 }
 
-/* line 518, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/home.scss.erb */
+/* line 518, /Users/chege/repo/politwoops/app/assets/stylesheets/home.scss.erb */
 #filter button {
   display: inline;
   clear: both;
   margin-top: 18px;
 }
-/* line 1, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 1, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 html {
   background: #F7F4EF;
 }
 
-/* line 2, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 2, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #content {
   padding: 0 5px 60px;
 }
 
-/* line 4, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 4, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #content h1 {
   font-size: 2.5em;
 }
 
-/* line 6, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 6, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 .wrapper {
   width: 100%;
   max-width: 1000px;
 }
 
-/* line 11, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 11, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 .news-app-banner {
   padding: 10px;
   text-align: center;
@@ -948,37 +948,37 @@ html {
   font-size: 14px;
 }
 
-/* line 20, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 20, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 .ribbon {
   border-bottom: 1px solid #eee;
 }
-/* line 23, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 23, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 .ribbon h5 {
   font-family: "ff-meta-serif-web-1","ff-meta-serif-web-2", Georgia, serif;
   margin: 0 0 10px 0;
 }
-/* line 26, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 26, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 .ribbon h5 a {
   color: #919191;
 }
 
-/* line 30, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 30, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 .wide {
   width: 100%;
 }
 
-/* line 31, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 31, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 .top {
   margin-top: 30px;
 }
 
-/* line 32, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 32, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 h1 {
   margin: 20px 0 10px;
   font-family: "Sentinel A", "Sentinel B", "Georgia",serif;
 }
 
-/* line 37, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 37, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 .byline {
   font-size: 14px;
   font-style: normal;
@@ -986,16 +986,16 @@ h1 {
   color: #333;
   text-align: center;
 }
-/* line 44, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 44, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 .byline a, .byline a:hover {
   color: #99C5E8;
 }
-/* line 48, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 48, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 .byline a:hover {
   text-decoration: underline;
 }
 
-/* line 53, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 53, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 span.update {
   font-weight: bold;
   font-family: sans-serif;
@@ -1005,7 +1005,7 @@ span.update {
   padding: 10px 0 0 0;
 }
 
-/* line 62, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 62, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 .guff {
   margin: 18px 0 10px;
   font-size: 15px;
@@ -1014,7 +1014,7 @@ span.update {
   font-family: "Sentinel A", "Sentinel B", "Georgia",serif;
 }
 
-/* line 70, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 70, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 .about {
   margin: 18px 0 10px;
   font-size: 15px;
@@ -1023,7 +1023,7 @@ span.update {
   font-family: "Sentinel A", "Sentinel B", "Georgia",serif;
 }
 
-/* line 78, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 78, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header {
   width: 100%;
   height: 40px;
@@ -1031,7 +1031,7 @@ span.update {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 85, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 85, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header .background-color {
   background-color: #F7F4EF;
   border-bottom: 2px solid #F5F0E9;
@@ -1039,11 +1039,11 @@ span.update {
   height: 40px;
   position: absolute;
 }
-/* line 93, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 93, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header .wrapper {
   position: relative;
 }
-/* line 95, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 95, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header h4 {
   font-family: "ff-meta-serif-web-1","ff-meta-serif-web-2","Georgia",serif;
   float: left;
@@ -1054,26 +1054,26 @@ span.update {
   border-left: 1px solid #DDD;
   margin: 7px 0 0 10px;
 }
-/* line 105, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 105, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header h4 a, #header h4 a:hover {
   color: #666;
   text-decoration: none;
 }
-/* line 110, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 110, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header h4 .icon {
   padding: 0 6px 0 2px;
   position: relative;
   top: 1px;
   width: 12px;
 }
-/* line 118, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 118, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header h5 {
   height: 40px;
   text-align: left;
   width: 120px;
   float: left;
 }
-/* line 124, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 124, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header h5 a {
   height: 45px;
   width: 120px;
@@ -1081,11 +1081,11 @@ span.update {
   background: url("/assets/standard-logo.png") 0 10px no-repeat;
   background-size: contain;
 }
-/* line 133, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 133, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header .donate {
   float: right;
 }
-/* line 136, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 136, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header .donate h2 {
   background: #750101;
   background: -webkit-gradient(linear, left top, left bottom, from(#750101), to(#BA0909));
@@ -1105,17 +1105,17 @@ span.update {
   padding: 3px 8px;
   margin: 0px;
 }
-/* line 155, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 155, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header .donate h2 a {
   text-decoration: none;
   color: #FFF;
 }
-/* line 162, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 162, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header #banner-share {
   float: right;
   margin: 10px 4px 0 0;
 }
-/* line 167, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 167, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header #banner-share li {
   width: 30px;
   height: 30px;
@@ -1124,7 +1124,7 @@ span.update {
   overflow: hidden;
   white-space: nowrap;
 }
-/* line 175, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 175, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header #banner-share li a {
   height: 30px;
   width: 30px;
@@ -1137,15 +1137,15 @@ span.update {
   -moz-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-/* line 188, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 188, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header #banner-share li.comment {
   border: none;
 }
-/* line 192, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 192, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header #banner-share .facebook a {
   background: url("https://static.propublica.org/assets/sprites-smaller.min.svg?20130417") 0 0 no-repeat;
 }
-/* line 193, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 193, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header #banner-share .facebook a:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -1153,11 +1153,11 @@ span.update {
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 194, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 194, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header #banner-share .twitter a {
   background: url("https://static.propublica.org/assets/sprites-smaller.min.svg?20130417") 3px -50px no-repeat;
 }
-/* line 195, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 195, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header #banner-share .twitter a:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -1165,11 +1165,11 @@ span.update {
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 196, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 196, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header #banner-share .sina-weibo a {
   background: url("https://static.propublica.org/assets/sprites-smaller.min.svg?20130417") 0 -100px no-repeat;
 }
-/* line 197, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 197, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #header #banner-share .sina-weibo a:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -1178,25 +1178,25 @@ span.update {
   transform: scale(1.1);
 }
 
-/* line 203, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 203, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 .main .wide {
   margin: 30px auto 40px;
   width: 100%;
 }
 
-/* line 210, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 210, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #community-promo-box {
   margin-bottom: 10px;
   display: inline-block;
   width: 100%;
 }
 
-/* line 215, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 215, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #community-promo-box > div:first-child {
   margin-right: 2%;
 }
 
-/* line 220, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 220, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #community-promo-box > div {
   margin-bottom: 20px;
   border-radius: 3px;
@@ -1211,40 +1211,40 @@ span.update {
   box-sizing: border-box;
   background-color: #EFEFEF;
 }
-/* line 234, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 234, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #community-promo-box > div div {
   float: left;
   max-width: 325px;
   width: 100%;
   padding: 0px;
 }
-/* line 241, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 241, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #community-promo-box > div a {
   margin-top: 2px;
   display: block;
   font-weight: bold;
 }
-/* line 247, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 247, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #community-promo-box > div img {
   width: 85%;
 }
-/* line 251, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 251, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #community-promo-box > div div:first-child {
   width: 125px;
 }
-/* line 255, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 255, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #community-promo-box > div h3 {
   font-size: 18px;
   color: #444;
   margin: 0px 0px 3px;
   font-style: italic;
 }
-/* line 261, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 261, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #community-promo-box > div p {
   color: #444;
 }
 
-/* line 265, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 265, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 footer {
   color: #898989;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -1254,35 +1254,35 @@ footer {
   padding-top: 20px;
   width: 100%;
 }
-/* line 274, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 274, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 footer p {
   margin: 0 0 10px 0;
 }
-/* line 276, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 276, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 footer p.footnote {
   padding: 20px 0 0 0;
   border-top: 1px solid #EEE;
   margin: 20px 0 10px 0;
 }
 
-/* line 283, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 283, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #footer {
   background: #F7F4EF;
   border-top: 2px solid #F5F0E9;
 }
 
-/* line 288, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 288, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #footer-logo-image {
   background: url("/assets/standard-footer-logo.png") 0 0 no-repeat;
   background-size: contain;
 }
 
-/* line 290, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 290, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 #footer .wrapper {
   padding: 30px 0;
 }
 
-/* line 292, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 292, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 .cf:before,
 .cf:after {
   content: " ";
@@ -1291,40 +1291,51 @@ footer p.footnote {
   /* 2 */
 }
 
-/* line 298, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+/* line 298, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
 .cf:after {
   clear: both;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13 / 10), only screen and (min-resolution: 120dpi) {
-  /* line 306, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/layout.scss.erb */
+  /* line 306, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
+  #header h5 {
+    height: 40px;
+    text-align: left;
+    width: 120px;
+    float: left;
+  }
+  /* line 312, /Users/chege/repo/politwoops/app/assets/stylesheets/layout.scss.erb */
   #header h5 a {
-    background: url("/assets/standard-logo.png") 0 -20px no-repeat;
+    height: 45px;
+    width: 120px;
+    display: inline-block;
+    background: url("/assets/standard-logo.png") 0 10px no-repeat;
+    background-size: contain;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 3, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/mobile.css.scss */
+  /* line 3, /Users/chege/repo/politwoops/app/assets/stylesheets/mobile.css.scss */
   html body {
     background: none;
     padding-top: 0px;
   }
 
-  /* line 8, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/mobile.css.scss */
+  /* line 8, /Users/chege/repo/politwoops/app/assets/stylesheets/mobile.css.scss */
   #content h1.app-name {
     margin: 20px 0 0 0;
   }
 
-  /* line 12, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/mobile.css.scss */
+  /* line 12, /Users/chege/repo/politwoops/app/assets/stylesheets/mobile.css.scss */
   .search-box input[type="text"] {
     width: 70%;
   }
 
-  /* line 16, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/mobile.css.scss */
+  /* line 16, /Users/chege/repo/politwoops/app/assets/stylesheets/mobile.css.scss */
   .search-box .fancy-btn {
     width: 28%;
   }
 }
-/* line 1, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/search.css.scss */
+/* line 1, /Users/chege/repo/politwoops/app/assets/stylesheets/search.css.scss */
 .search-box {
   width: 100%;
   padding: 15px 15px 0 15px;
@@ -1335,7 +1346,7 @@ footer p.footnote {
   display: inline-block;
   margin-bottom: 15px;
 }
-/* line 12, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/search.css.scss */
+/* line 12, /Users/chege/repo/politwoops/app/assets/stylesheets/search.css.scss */
 .search-box h3 {
   font-family: "Sentinel A", "Sentinel B", Georgia, serif;
   line-height: 1.4em;
@@ -1343,20 +1354,20 @@ footer p.footnote {
   padding: 0 0 8px;
   margin-top: -25px;
 }
-/* line 20, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/search.css.scss */
+/* line 20, /Users/chege/repo/politwoops/app/assets/stylesheets/search.css.scss */
 .search-box .examples {
   font-family: 'Atlas Grotesk Web', Helvetica, sans-serif;
   margin: 10px 0 15px;
   font-size: 11px;
 }
-/* line 26, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/search.css.scss */
+/* line 26, /Users/chege/repo/politwoops/app/assets/stylesheets/search.css.scss */
 .search-box .users {
   font-family: 'Atlas Grotesk Web', Helvetica, sans-serif;
   margin: -27px 0 0;
   font-size: 11px;
   float: right;
 }
-/* line 33, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/search.css.scss */
+/* line 33, /Users/chege/repo/politwoops/app/assets/stylesheets/search.css.scss */
 .search-box input[type="text"] {
   width: 48%;
   border-radius: 4px;
@@ -1377,7 +1388,7 @@ footer p.footnote {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 54, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/search.css.scss */
+/* line 54, /Users/chege/repo/politwoops/app/assets/stylesheets/search.css.scss */
 .search-box .filter-btn {
   padding: 0px 10px;
   -webkit-border-radius: 04px;
@@ -1417,14 +1428,14 @@ footer p.footnote {
   margin-left: 1%;
 }
 
-/* line 94, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/search.css.scss */
+/* line 94, /Users/chege/repo/politwoops/app/assets/stylesheets/search.css.scss */
 .state-guff {
   font-family: "Sentinel A", "Sentinel B", Georgia, serif;
   margin-right: 5px;
   font-size: 15px;
 }
 
-/* line 100, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/search.css.scss */
+/* line 100, /Users/chege/repo/politwoops/app/assets/stylesheets/search.css.scss */
 .states {
   font-weight: 500;
   font-family: "Sentinel A", "Sentinel B", Georgia, serif;
@@ -1436,7 +1447,7 @@ footer p.footnote {
   box-sizing: border-box;
 }
 
-/* line 111, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/search.css.scss */
+/* line 111, /Users/chege/repo/politwoops/app/assets/stylesheets/search.css.scss */
 .state-select {
   background: transparent;
   border-radius: 0px;
@@ -1447,7 +1458,7 @@ footer p.footnote {
   border: none;
 }
 
-/* line 121, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/search.css.scss */
+/* line 121, /Users/chege/repo/politwoops/app/assets/stylesheets/search.css.scss */
 .state-drop {
   overflow: hidden;
   background-color: white;
@@ -1457,19 +1468,19 @@ footer p.footnote {
 }
 
 @media all and (max-width: 640px) {
-  /* line 130, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/search.css.scss */
+  /* line 130, /Users/chege/repo/politwoops/app/assets/stylesheets/search.css.scss */
   .examples {
     display: none;
   }
 
-  /* line 134, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/search.css.scss */
+  /* line 134, /Users/chege/repo/politwoops/app/assets/stylesheets/search.css.scss */
   .users {
     padding-top: 10px;
     float: left !important;
     display: inline-block !important;
   }
 
-  /* line 140, /home/jj/repo/CFA/politwoops/app/assets/stylesheets/search.css.scss */
+  /* line 140, /Users/chege/repo/politwoops/app/assets/stylesheets/search.css.scss */
   .states {
     padding-top: 5px;
     float: left !important;

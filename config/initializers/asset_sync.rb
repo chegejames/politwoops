@@ -5,8 +5,8 @@ AssetSync.configure do |config|
 
   # https://console.aws.amazon.com/iam/home?region=us-east-1#users/rails_asset_sync
   # User: rails_asset_sync
-  config.aws_access_key_id = 'AKIAIPQ352WR6VGWPZJA'
-  config.aws_secret_access_key = "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"
+  config.aws_access_key_id = ENV['access_key_id']
+  config.aws_secret_access_key = ENV['secret_access_key']
 
   # mimetype sometimes barfs on the things we gzip'd, so just explicitly set
   # content_type on everything we gzip (in lib/tasks/assets.rake)

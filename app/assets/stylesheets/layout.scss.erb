@@ -303,7 +303,18 @@ footer {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
 only screen and (-o-min-device-pixel-ratio: 13/10),
 only screen and (min-resolution: 120dpi) {
-  #header h5 a {
-    background: url("<%= image_path("standard-logo.png") %>") 0 -20px no-repeat;
+  #header h5{
+    height: 40px;
+    text-align: left;
+    width: 120px;
+    float: left;
+
+    a {
+      height: 45px;
+      width: 120px;
+      display: inline-block;
+      background: url("<%= image_path("standard-logo.png") %>") 0 10px no-repeat;
+      background-size: contain;
+    }
   }
 }
