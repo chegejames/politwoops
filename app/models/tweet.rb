@@ -2,7 +2,6 @@
 class Tweet < ActiveRecord::Base
   belongs_to :politician
 
-
   has_many :tweet_images, :foreign_key => "tweet_id"
 
   scope :with_content, -> { where.not content: nil}

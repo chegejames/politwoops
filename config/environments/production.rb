@@ -68,7 +68,7 @@ Politwoops::Application.configure do
     :storage => :s3,
     :path => "/:attachment/:filename",
     :url => ":s3_domain_url",
-    :s3_domain_url => "http://cfa-politwoops-ke.s3.amazonaws.com/",
+    :s3_domain_url => "http://s3-eu-west-1.amazonaws.com/cfa-politwoops-ke/",
     :s3_region => "eu-west-1",
     :s3_credentials => {
       :bucket => 'cfa-politwoops-ke',

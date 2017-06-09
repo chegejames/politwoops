@@ -15,10 +15,5 @@ public/images/avatars/*
 /config/tweets-client.ini
 /config/secrets.yml
 /config/skylight.yml
-/*~
-
 .*.swp
 .DS_Store
-*~
-\#*\#
-.\#.*

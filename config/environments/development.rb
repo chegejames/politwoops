@@ -33,7 +33,7 @@ Politwoops::Application.configure do
 
   config.paperclip_defaults = {
     :storage => :s3,
-    :path => "/avater/:attachment/:filename",
+    :path => "/avatar/:attachment/:filename",
     :url => ":s3_domain_url",
     :s3_region => "eu-west-1",
     :s3_credentials => {
